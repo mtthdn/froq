@@ -14,7 +14,7 @@ jobs:
 
       - name: Install CUE
         run: |
-          curl -fsSL https://cuelang.org/dl/cue_v0.11.1_linux_amd64.tar.gz | tar xz
+          curl -fsSL https://github.com/cue-lang/cue/releases/download/v0.15.4/cue_v0.15.4_linux_amd64.tar.gz | tar xz
           sudo mv cue /usr/local/bin/
 
       - name: Set up Python
