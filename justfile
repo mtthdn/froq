@@ -141,9 +141,9 @@ normalize-models:
 site: vizdata
     python3 generators/to_site.py
 
-# Deploy site
+# Deploy site to production (LXC 612)
 deploy: site
-    bash deploy.sh
+    bash deploy.sh --prod
 
 # Local preview server
 serve: site
@@ -156,18 +156,6 @@ anomalies:
 # Weekly digest (markdown summary of pipeline state)
 digest:
     python3 generators/to_digest.py
-
-# Bulk pipeline: genome-wide analysis (19K genes, no CUE)
-bulk:
-    python3 normalizers/bulk_downloads.py
-
-# Bulk pipeline: craniofacial-adjacent only (1K+ genes)
-bulk-craniofacial:
-    python3 normalizers/bulk_downloads.py --craniofacial
-
-# Download HGNC complete gene set
-hgnc:
-    python3 normalizers/bulk_hgnc.py --craniofacial
 
 # Generate all outputs
 all: generate vizdata report site

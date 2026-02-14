@@ -18,9 +18,7 @@ lattice semantics. Generators produce JSON summaries and VizData.
 - `just gaps` — Show research gap report
 - `just anomalies` — Show cross-source anomalies
 - `just digest` — Weekly digest markdown
-- `just bulk` — Genome-wide bulk analysis (moved to lacuene-exp)
-- `just bulk-craniofacial` — Craniofacial bulk analysis (moved to lacuene-exp)
-- `just hgnc` — Download/refresh HGNC gene data (moved to lacuene-exp)
+- `just deploy` — Build and deploy site to LXC 612 (production)
 
 ## Architecture
 ```
