@@ -137,7 +137,7 @@ def escape_cue_string(s: str) -> str:
 
 def generate_cue(pubmed_data: dict) -> str:
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// PubMed: craniofacial publication data for neural crest genes.",
         "// Source: NCBI PubMed via E-utilities (esearch + esummary)",

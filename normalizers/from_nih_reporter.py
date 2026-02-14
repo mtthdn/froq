@@ -117,7 +117,7 @@ def save_cache(cache: dict) -> None:
 def generate_cue(reporter_data: dict) -> str:
     """Generate CUE source from NIH Reporter data, keyed by HGNC symbol."""
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// NIH Reporter: active craniofacial grant data for neural crest genes.",
         "// Source: NIH Reporter v2 API (projects/search)",

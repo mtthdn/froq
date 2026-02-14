@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // Enrichment tiers: how many biological layers describe each gene?
 // A gene with all 10 sources = fully characterized.

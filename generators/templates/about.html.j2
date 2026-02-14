@@ -1,6 +1,6 @@
 {% extends "base.html.j2" %}
 
-{% block title %}About &mdash; froq Grant Gap Finder{% endblock %}
+{% block title %}About &mdash; lacuene Grant Gap Finder{% endblock %}
 
 {% block extra_style %}
 .header {
@@ -41,14 +41,14 @@ li { margin-bottom: 0.3rem; }
 
 {% block body %}
 <div class="header">
-  <h1><span>froq</span> About &amp; Methodology</h1>
+  <h1><span>lacuene</span> About &amp; Methodology</h1>
   <a href="index.html" class="back-link">&larr; Back to Dashboard</a>
 </div>
 <div class="container">
 
-<h2>What is froq?</h2>
+<h2>What is lacuene?</h2>
 <p>
-  <strong>froq</strong> (Frog Reconciliation of Queries) is a multi-source biomedical data
+  <strong>lacuene</strong> (from French <em>lacune</em>, meaning gap) is a multi-source biomedical data
   reconciliation tool that cross-references {{ total }} neural crest genes across {{ source_count }} public databases.
   It surfaces <em>funding gaps</em>: genes with established clinical relevance but insufficient
   experimental research coverage, helping program officers identify high-impact targets for
@@ -63,7 +63,7 @@ li { margin-bottom: 0.3rem; }
 
 <h2>Capabilities</h2>
 <p>
-  froq provides sixteen interactive features, each designed around a question a program officer
+  lacuene provides sixteen interactive features, each designed around a question a program officer
   or PI might ask during grant review or portfolio planning.
 </p>
 <ol>
@@ -145,9 +145,9 @@ li { margin-bottom: 0.3rem; }
     (&lt; 20 publications). Exports the currently filtered view when filters are active.</li>
 </ol>
 
-<h2>What froq does that individual databases don&rsquo;t</h2>
+<h2>What lacuene does that individual databases don&rsquo;t</h2>
 <p>
-  Each of froq&rsquo;s {{ source_count }} data sources is excellent at what it does. OMIM catalogs
+  Each of lacuene&rsquo;s {{ source_count }} data sources is excellent at what it does. OMIM catalogs
   disease associations with unmatched depth. FaceBase curates craniofacial datasets with
   careful experimental metadata. PubMed indexes the literature comprehensively. The challenge
   isn&rsquo;t the quality of any single source &mdash; it&rsquo;s that no single source answers
@@ -156,7 +156,7 @@ li { margin-bottom: 0.3rem; }
 <ul>
   <li><strong>Gap detection across sources.</strong> OMIM can tell you a gene causes
     Waardenburg syndrome. FaceBase can tell you what datasets it has. Neither tells you which
-    disease genes <em>lack</em> FaceBase data. froq computes that automatically for every gene
+    disease genes <em>lack</em> FaceBase data. lacuene computes that automatically for every gene
     in the set.</li>
 
   <li><strong>Disease-level aggregation.</strong> A syndrome like Treacher Collins involves
@@ -169,7 +169,7 @@ li { margin-bottom: 0.3rem; }
     remain &mdash; requires overlaying portfolio data against the gap analysis. This is a
     question no public database is designed to answer.</li>
 
-  <li><strong>Reproducible reconciliation.</strong> froq&rsquo;s pipeline uses
+  <li><strong>Reproducible reconciliation.</strong> lacuene&rsquo;s pipeline uses
     <a href="https://cuelang.org/">CUE</a> lattice unification to merge all {{ source_count }} sources
     structurally, not through ad-hoc scripts. Adding another source means adding one normalizer;
     the type system guarantees it integrates cleanly with the existing model. The full pipeline
@@ -312,10 +312,10 @@ li { margin-bottom: 0.3rem; }
 
 <h2>Technology</h2>
 <p>
-  froq is built with <a href="https://cuelang.org/">CUE</a> for data unification,
+  lacuene is built with <a href="https://cuelang.org/">CUE</a> for data unification,
   Python for normalization and generation, and <a href="https://js.cytoscape.org/">Cytoscape.js</a>
   for graph visualization. The pipeline is fully reproducible from cached source data.
-  Source code is available on <a href="https://github.com/mtthdn/froq">GitHub</a>.
+  Source code is available on <a href="https://github.com/mtthdn/lacuene">GitHub</a>.
 </p>
 
 <h2>References</h2>
@@ -359,8 +359,8 @@ li { margin-bottom: 0.3rem; }
 </ul>
 
 <div class="footer">
-  froq &mdash; CUE lattice unification for multi-source biomedical data &middot;
-  <a href="https://github.com/mtthdn/froq">GitHub</a>
+  lacuene &mdash; CUE lattice unification for multi-source biomedical data &middot;
+  <a href="https://github.com/mtthdn/lacuene">GitHub</a>
 </div>
 
 </div>

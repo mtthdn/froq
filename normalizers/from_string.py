@@ -150,7 +150,7 @@ def generate_cue(string_data: dict) -> str:
     """Generate CUE source from STRING data, keyed by HGNC symbol."""
     gene_count = len(string_data)
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// STRING: protein-protein interaction data for neural crest genes.",
         "// Source: STRING database (string-db.org) v12",

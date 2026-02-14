@@ -115,7 +115,7 @@ def generate_cue(gnomad_data: dict) -> str:
     """Generate CUE source from gnomAD data, keyed by HGNC symbol."""
     gene_count = len(gnomad_data)
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// gnomAD: gene constraint metrics for neural crest genes.",
         "// Source: gnomAD GraphQL API (GRCh38)",

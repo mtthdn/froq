@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // OMIM: Mendelian disease associations for neural crest genes.
 // Source: data/omim/omim_subset.json (bundled subset, hand-curated from omim.org)

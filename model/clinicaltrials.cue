@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // ClinicalTrials.gov: active clinical trials for neural crest genes.
 // Source: ClinicalTrials.gov API v2

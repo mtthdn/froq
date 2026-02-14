@@ -1,4 +1,4 @@
-# froq: What This Is and Where It Could Go
+# lacuene: What This Is and Where It Could Go
 
 Jamie --
 
@@ -6,7 +6,7 @@ I assumed you'd want to see funding gaps first, so that's what I built. If I'm w
 
 ## What You're Looking At
 
-froq cross-references 95 neural crest genes across 12 public databases (Gene Ontology, OMIM, HPO, UniProt, FaceBase, ClinVar, PubMed, gnomAD, NIH Reporter, GTEx, ClinicalTrials.gov, STRING) and shows you the coverage in one place. The headline finding: 73 of those 95 genes have Mendelian disease associations in OMIM but zero experimental datasets in FaceBase. Whether that's interesting or obvious to you, I don't know -- but the data's there and it's verifiable. Click any gene and check.
+lacuene cross-references 95 neural crest genes across 12 public databases (Gene Ontology, OMIM, HPO, UniProt, FaceBase, ClinVar, PubMed, gnomAD, NIH Reporter, GTEx, ClinicalTrials.gov, STRING) and shows you the coverage in one place. The headline finding: 73 of those 95 genes have Mendelian disease associations in OMIM but zero experimental datasets in FaceBase. Whether that's interesting or obvious to you, I don't know -- but the data's there and it's verifiable. Click any gene and check.
 
 ## What It Does Now
 

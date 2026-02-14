@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // Canonical gene list with HGNC symbols.
 // Auto-generated from normalizers/genes.py -- do not hand-edit.

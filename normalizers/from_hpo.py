@@ -77,7 +77,7 @@ def escape_cue_string(s: str) -> str:
 def write_cue(phenotypes_by_gene: dict[str, set[str]]) -> None:
     """Write model/hpo.cue with HPO phenotype data."""
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// HPO: Human Phenotype Ontology gene-phenotype annotations.",
         "// Source: http://purl.obolibrary.org/obo/hp/hpoa/genes_to_phenotype.txt",

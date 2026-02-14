@@ -1,4 +1,4 @@
-# CLAUDE.md — froq
+# CLAUDE.md — lacuene
 
 ## What This Is
 Neural crest gene reconciliation pipeline. Normalizers transform biomedical

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Deploy froq site locally or via GitHub Pages
+# Deploy lacuene site locally or via GitHub Pages
 set -euo pipefail
 
 SITE_DIR="$(cd "$(dirname "$0")" && pwd)/output/site"
@@ -10,7 +10,7 @@ if [[ ! -f "$SITE_DIR/index.html" ]]; then
     exit 1
 fi
 
-echo "froq site ready at: $SITE_DIR"
+echo "lacuene site ready at: $SITE_DIR"
 echo "  index.html: $(du -h "$SITE_DIR/index.html" | cut -f1)"
 echo "  about.html: $(du -h "$SITE_DIR/about.html" | cut -f1)"
 echo ""

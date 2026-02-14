@@ -1,4 +1,4 @@
-# Adding a Source to froq
+# Adding a Source to lacuene
 
 Adding a 13th (or Nth) biomedical database follows the same pattern as the existing 12.
 The model uses CUE lattice unification — each source contributes its own fields,
@@ -41,7 +41,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
 from genes import GENES
 
 def main():
-    lines = ["package froq\n"]
+    lines = ["package lacuene\n"]
     for symbol in sorted(GENES.keys()):
         # Query KEGG API for this gene
         kegg_id = fetch_kegg_id(symbol)
@@ -67,7 +67,7 @@ def main():
 
 Key rules:
 - Import `GENES` from `normalizers/genes.py` for the canonical gene list
-- Write `package froq` — same package as all other model files
+- Write `package lacuene` — same package as all other model files
 - Set `_in_kegg: true` for every gene you find
 - Only touch KEGG-owned fields. Never set `_in_go` or any other source's fields.
 - Escape strings for CUE (backslashes, double quotes)

@@ -1,4 +1,4 @@
-# froq: Neural crest gene reconciliation pipeline
+# lacuene: Neural crest gene reconciliation pipeline
 # Unifies 12 biomedical sources into one CUE model via lattice semantics.
 
 default: validate generate

@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // Funding gap analysis for NIDCR program officers.
 // Scores genes by: has disease + has phenotype + no experimental data + low/no publications.

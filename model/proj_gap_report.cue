@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // Gap report: surfaces genes missing from each data source.
 // Drives research prioritization — if a gene has OMIM disease

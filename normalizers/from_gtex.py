@@ -204,7 +204,7 @@ def generate_cue(gtex_data: dict) -> str:
     """Generate CUE source from GTEx data, keyed by HGNC symbol."""
     gene_count = len(gtex_data)
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// GTEx: tissue expression data for neural crest genes.",
         "// Source: GTEx Portal API v2 + MyGene.info (Ensembl ID resolution)",

@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // HPO: Human Phenotype Ontology gene-phenotype annotations.
 // Source: http://purl.obolibrary.org/obo/hp/hpoa/genes_to_phenotype.txt

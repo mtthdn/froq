@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // ClinVar: pathogenic variant data for neural crest genes.
 // Source: NCBI ClinVar via E-utilities (esearch + esummary)

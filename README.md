@@ -1,4 +1,4 @@
-# froq — Neural Crest Gene Reconciliation
+# lacuene — Neural Crest Gene Reconciliation
 
 Reconciles 95 neural crest development genes across 12 public biomedical databases
 using CUE's lattice unification. Each source contributes its own fields; CUE unifies

@@ -200,7 +200,7 @@ def gene_symbols() -> list[str]:
 def export_cue(output_path: str):
     """Export gene list as CUE for model self-description."""
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// Canonical gene list with HGNC symbols.",
         "// Auto-generated from normalizers/genes.py -- do not hand-edit.",

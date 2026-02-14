@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // Unified gene schema. Ten sources contribute fields.
 // Each source claims its own identifiers — no shared mutable fields.

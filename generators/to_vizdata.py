@@ -245,7 +245,7 @@ def main():
         "nodes": nodes,
         "edges": edges,
         "metadata": {
-            "title": "froq: Neural Crest Gene Reconciliation",
+            "title": "lacuene: Neural Crest Gene Reconciliation",
             "gene_count": len(nodes),
             "edge_count": len(edges),
             "sources": ["Gene Ontology", "OMIM", "HPO", "UniProt", "FaceBase",

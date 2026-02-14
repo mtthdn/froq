@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // Export source provenance as visible fields.
 // Hidden _in_* fields aren't exported by CUE; this projection makes them available.

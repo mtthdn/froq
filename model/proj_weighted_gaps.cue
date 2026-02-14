@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // Weighted gap priority scoring for NIDCR funding decisions.
 // Higher score = stronger case for new funding.

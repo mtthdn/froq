@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // PubMed: craniofacial publication data for neural crest genes.
 // Source: NCBI PubMed via E-utilities (esearch + esummary)

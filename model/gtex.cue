@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // GTEx: tissue expression data for neural crest genes.
 // Source: GTEx Portal API v2 + MyGene.info (Ensembl ID resolution)

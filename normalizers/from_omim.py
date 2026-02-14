@@ -47,7 +47,7 @@ def format_cue_string(s: str) -> str:
 def generate_cue(omim_data: dict) -> str:
     """Generate CUE source from OMIM data, keyed by HGNC symbol."""
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// OMIM: Mendelian disease associations for neural crest genes.",
         "// Source: data/omim/omim_subset.json (bundled subset, hand-curated from omim.org)",

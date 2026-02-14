@@ -139,7 +139,7 @@ def generate_cue(ct_data: dict) -> str:
     """Generate CUE source from ClinicalTrials data, keyed by HGNC symbol."""
     gene_count = len(ct_data)
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// ClinicalTrials.gov: active clinical trials for neural crest genes.",
         "// Source: ClinicalTrials.gov API v2",

@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 // gnomAD: gene constraint metrics for neural crest genes.
 // Source: gnomAD GraphQL API (GRCh38)

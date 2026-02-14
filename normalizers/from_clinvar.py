@@ -157,7 +157,7 @@ def generate_cue(clinvar_data: dict) -> str:
     """Generate CUE source from ClinVar data, keyed by HGNC symbol."""
     gene_count = len(clinvar_data)
     lines = [
-        "package froq",
+        "package lacuene",
         "",
         "// ClinVar: pathogenic variant data for neural crest genes.",
         "// Source: NCBI ClinVar via E-utilities (esearch + esummary)",

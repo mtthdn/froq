@@ -1,4 +1,4 @@
-package froq
+package lacuene
 
 import "list"
 

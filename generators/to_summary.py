@@ -61,7 +61,7 @@ def main():
     }
 
     print("=" * 60)
-    print("  froq: Neural Crest Gene Reconciliation")
+    print("  lacuene: Neural Crest Gene Reconciliation")
     print("=" * 60)
     source_total = len(source_keys)
     print(f"\n{total} genes unified across {source_total} sources\n")
