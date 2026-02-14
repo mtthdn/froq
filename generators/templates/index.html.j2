@@ -121,6 +121,7 @@
         <button class="layout-btn active" onclick="setLayout('cose', this)">Force</button>
         <button class="layout-btn" onclick="setLayout('circle', this)">Circle</button>
         <button class="layout-btn" onclick="setLayout('concentric', this)">Concentric</button>
+        <button class="layout-btn" onclick="setClusterLayout(this)">Cluster</button>
         <div style="margin-top:0.5rem">
           <span style="font-size:0.75rem;color:var(--text-sec);margin-right:0.5rem">Edges:</span>
           <button class="layout-btn edge-filter active" data-edge="all" onclick="filterEdges('all', this)">All</button>
@@ -137,6 +138,7 @@
       </div>
     </div>
     <div id="cy"></div>
+    <div class="community-panel" id="community-info"></div>
   </div>
 
   <!-- Syndrome-Centric View -->
@@ -187,6 +189,21 @@
       <h2>Change History</h2>
     </div>
     <div style="padding:1.5rem" id="history-content"></div>
+  </div>
+
+  <!-- Cross-Source Anomalies -->
+  <div class="table-section" id="anomalies-section">
+    <div class="table-header" style="cursor:pointer" onclick="toggleAnomalies()">
+      <h2>Cross-Source Anomalies</h2>
+      <div class="table-actions">
+        <span class="anomaly-summary-badge" id="anomaly-count-badge"></span>
+        <button class="action-btn" id="anomaly-toggle-btn">Expand</button>
+      </div>
+    </div>
+    <div class="anomalies-body collapsible-section" id="anomalies-body">
+      <div class="anomalies-type-bar" id="anomalies-type-bar"></div>
+      <div class="anomalies-list" id="anomalies-list"></div>
+    </div>
   </div>
 
   <!-- Gene table -->

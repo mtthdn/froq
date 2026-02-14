@@ -158,6 +158,9 @@ def main():
     # Weighted priority scores
     weighted = cue_export("weighted_gaps")
 
+    # Cross-source anomalies
+    anomalies = cue_export("anomalies")
+
     # Temporal snapshots
     snap_dir = os.path.join(os.path.dirname(__file__), "..", "output", "snapshots")
     os.makedirs(snap_dir, exist_ok=True)
@@ -209,6 +212,7 @@ def main():
         critical_gaps_json=json.dumps(critical_gaps),
         snapshots_json=json.dumps(snapshots),
         weighted_gaps_json=json.dumps(weighted),
+        anomalies_json=json.dumps(anomalies),
         total=total,
         source_count=source_count,
         source_names=source_names,

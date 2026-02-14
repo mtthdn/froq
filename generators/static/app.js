@@ -3,6 +3,7 @@ const GENE_ROWS = {{ gene_rows_json }};
 const CRITICAL_GAPS = {{ critical_gaps_json }};
 const SNAPSHOTS = {{ snapshots_json }};
 const WEIGHTED_GAPS = {{ weighted_gaps_json }};
+const ANOMALIES = {{ anomalies_json }};
 const SOURCE_COUNT = {{ source_count }};
 let currentFilteredRows = GENE_ROWS;
 
@@ -867,6 +868,106 @@ function analyzePortfolio() {
   container.innerHTML = html;
 })();
 
+// === Cross-Source Anomalies ===
+const ANOMALY_TYPE_META = {
+  omim_no_clinvar:       { label: 'OMIM Disease / No ClinVar',   color: 'var(--orange)',  icon: 'W' },
+  high_pli_no_trials:    { label: 'High pLI / No Trials',        color: 'var(--accent)',  icon: 'I' },
+  high_pubs_no_facebase: { label: 'High Pubs / No FaceBase',     color: 'var(--orange)',  icon: 'W' },
+  clinvar_no_hpo:        { label: 'ClinVar / No HPO Phenotypes',  color: 'var(--red)',     icon: 'E' },
+};
+
+let anomaliesExpanded = false;
+
+function toggleAnomalies() {
+  anomaliesExpanded = !anomaliesExpanded;
+  const body = document.getElementById('anomalies-body');
+  const btn = document.getElementById('anomaly-toggle-btn');
+  if (anomaliesExpanded) {
+    body.classList.add('open');
+    btn.textContent = 'Collapse';
+  } else {
+    body.classList.remove('open');
+    btn.textContent = 'Expand';
+  }
+}
+
+(function renderAnomalies() {
+  const items = ANOMALIES.genes_with_anomalies || [];
+  const summary = ANOMALIES.summary || {};
+
+  // Badge
+  const badge = document.getElementById('anomaly-count-badge');
+  badge.textContent = summary.total_anomalies + ' flagged';
+  if (summary.clinvar_no_hpo_count > 0) {
+    badge.style.borderColor = 'rgba(248,81,73,0.5)';
+    badge.style.color = 'var(--red)';
+  }
+
+  // Type bar: one button per anomaly type showing count
+  const typeBar = document.getElementById('anomalies-type-bar');
+  let typeBarHtml = '';
+  for (const [key, meta] of Object.entries(ANOMALY_TYPE_META)) {
+    const count = summary[key + '_count'] || 0;
+    typeBarHtml += '<button class="anomaly-type-pill" data-anomaly-type="' + key + '" onclick="filterAnomalyType(this)" style="--pill-color:' + meta.color + '">';
+    typeBarHtml += '<span class="anomaly-type-icon" style="background:' + meta.color + '">' + meta.icon + '</span>';
+    typeBarHtml += meta.label + ' <strong>' + count + '</strong>';
+    typeBarHtml += '</button>';
+  }
+  typeBar.innerHTML = typeBarHtml;
+
+  // Render all items
+  renderAnomalyList(items);
+})();
+
+let activeAnomalyFilter = null;
+
+function filterAnomalyType(btn) {
+  const type = btn.dataset.anomalyType;
+  const pills = document.querySelectorAll('.anomaly-type-pill');
+  if (activeAnomalyFilter === type) {
+    activeAnomalyFilter = null;
+    pills.forEach(p => p.classList.remove('active'));
+    renderAnomalyList(ANOMALIES.genes_with_anomalies);
+  } else {
+    activeAnomalyFilter = type;
+    pills.forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    const filtered = ANOMALIES.genes_with_anomalies.filter(a => a.anomaly_type === type);
+    renderAnomalyList(filtered);
+  }
+}
+
+function renderAnomalyList(items) {
+  const container = document.getElementById('anomalies-list');
+  let html = '';
+  items.forEach(a => {
+    const meta = ANOMALY_TYPE_META[a.anomaly_type] || { label: a.anomaly_type, color: 'var(--text-sec)', icon: '?' };
+    let detail = '';
+    if (a.syndromes && a.syndromes.length > 0) detail = a.syndromes[0].split(',')[0];
+    else if (a.pli_score != null) detail = 'pLI: ' + a.pli_score.toFixed(3);
+    else if (a.pub_count != null) detail = a.pub_count + ' publications';
+    else if (a.pathogenic_count != null) detail = a.pathogenic_count + ' pathogenic variants';
+
+    html += '<div class="anomaly-item" onclick="focusGene(\'' + a.symbol + '\')">';
+    html += '<div class="anomaly-item-left">';
+    html += '<span class="anomaly-severity-tag" style="background:' + meta.color + '">' + meta.icon + '</span>';
+    html += '<div>';
+    html += '<div class="anomaly-item-gene">' + a.symbol + '</div>';
+    html += '<div class="anomaly-item-desc">' + a.description + '</div>';
+    html += '</div>';
+    html += '</div>';
+    html += '<div class="anomaly-item-right">';
+    if (detail) html += '<span class="anomaly-item-detail">' + detail + '</span>';
+    html += '<span class="anomaly-item-type">' + meta.label + '</span>';
+    html += '</div>';
+    html += '</div>';
+  });
+  if (items.length === 0) {
+    html = '<div style="padding:1.5rem;color:var(--text-sec);font-size:0.85rem">No anomalies detected for this filter.</div>';
+  }
+  container.innerHTML = html;
+}
+
 // === Cross-Source Filter ===
 function cycleFilter(btn) {
   const states = ['any', 'required', 'excluded'];
@@ -1037,3 +1138,257 @@ function restoreHashState() {
 }
 
 restoreHashState();
+
+// === Community Detection (Label Propagation) ===
+function detectCommunities() {
+  const nodes = cy.nodes();
+  // Initialize: each node gets its own label
+  nodes.forEach((n, i) => n.data('community', i));
+
+  for (let iter = 0; iter < 30; iter++) {
+    let changed = false;
+    // Shuffle traversal order for better convergence
+    const order = [...Array(nodes.length).keys()];
+    for (let i = order.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [order[i], order[j]] = [order[j], order[i]];
+    }
+    for (const idx of order) {
+      const node = nodes[idx];
+      const neighbors = node.neighborhood().nodes();
+      if (neighbors.length === 0) continue;
+      // Count neighbor labels, weighted by edge count between them
+      const counts = {};
+      neighbors.forEach(nb => {
+        const lbl = nb.data('community');
+        counts[lbl] = (counts[lbl] || 0) + 1;
+      });
+      // Pick the most frequent label (tie-break: smallest label for stability)
+      let bestLabel = node.data('community'), bestCount = 0;
+      for (const [lbl, cnt] of Object.entries(counts)) {
+        if (cnt > bestCount || (cnt === bestCount && Number(lbl) < Number(bestLabel))) {
+          bestLabel = Number(lbl);
+          bestCount = cnt;
+        }
+      }
+      if (bestLabel !== node.data('community')) {
+        node.data('community', bestLabel);
+        changed = true;
+      }
+    }
+    if (!changed) break;
+  }
+
+  // Collect communities and assign sequential IDs
+  const labelMap = {};
+  let nextId = 0;
+  nodes.forEach(n => {
+    const raw = n.data('community');
+    if (!(raw in labelMap)) labelMap[raw] = nextId++;
+    n.data('community', labelMap[raw]);
+  });
+  return nextId;
+}
+
+const communityCount = detectCommunities();
+
+// Build community metadata
+function getCommunityInfo() {
+  const communities = {};
+  cy.nodes().forEach(n => {
+    const cid = n.data('community');
+    if (!communities[cid]) communities[cid] = { id: cid, members: [], roles: {} };
+    communities[cid].members.push(n.data('id'));
+    const role = n.data('role_label') || 'Unknown';
+    communities[cid].roles[role] = (communities[cid].roles[role] || 0) + 1;
+  });
+  // Determine dominant role per community
+  for (const c of Object.values(communities)) {
+    let bestRole = '', bestCount = 0;
+    for (const [role, cnt] of Object.entries(c.roles)) {
+      if (cnt > bestCount) { bestRole = role; bestCount = cnt; }
+    }
+    c.dominantRole = bestRole;
+  }
+  return Object.values(communities).sort((a, b) => b.members.length - a.members.length);
+}
+
+const COMMUNITY_INFO = getCommunityInfo();
+
+// Community color palette (muted, for hull overlays)
+const COMMUNITY_COLORS = [
+  'rgba(88,166,255,0.12)', 'rgba(163,113,247,0.12)', 'rgba(63,185,80,0.12)',
+  'rgba(210,153,34,0.12)', 'rgba(248,81,73,0.12)', 'rgba(219,97,162,0.12)',
+  'rgba(121,192,255,0.12)', 'rgba(240,136,62,0.12)', 'rgba(130,200,180,0.12)',
+  'rgba(200,200,100,0.12)', 'rgba(180,130,220,0.12)', 'rgba(100,180,230,0.12)',
+];
+const COMMUNITY_BORDER_COLORS = [
+  'rgba(88,166,255,0.45)', 'rgba(163,113,247,0.45)', 'rgba(63,185,80,0.45)',
+  'rgba(210,153,34,0.45)', 'rgba(248,81,73,0.45)', 'rgba(219,97,162,0.45)',
+  'rgba(121,192,255,0.45)', 'rgba(240,136,62,0.45)', 'rgba(130,200,180,0.45)',
+  'rgba(200,200,100,0.45)', 'rgba(180,130,220,0.45)', 'rgba(100,180,230,0.45)',
+];
+
+// Draw community hulls on a canvas overlay
+let hullCanvas = null;
+let hullCtx = null;
+let showingClusters = false;
+
+function initHullCanvas() {
+  if (hullCanvas) return;
+  const container = document.getElementById('cy');
+  hullCanvas = document.createElement('canvas');
+  hullCanvas.className = 'community-hull-canvas';
+  hullCanvas.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;';
+  container.style.position = 'relative';
+  container.appendChild(hullCanvas);
+}
+
+function drawCommunityHulls() {
+  if (!hullCanvas || !showingClusters) return;
+  const rect = hullCanvas.parentElement.getBoundingClientRect();
+  hullCanvas.width = rect.width;
+  hullCanvas.height = rect.height;
+  hullCtx = hullCanvas.getContext('2d');
+  hullCtx.clearRect(0, 0, hullCanvas.width, hullCanvas.height);
+
+  COMMUNITY_INFO.forEach((comm, i) => {
+    if (comm.members.length < 2) return;
+    const points = [];
+    comm.members.forEach(sym => {
+      const n = cy.getElementById(sym);
+      if (n.length) {
+        const pos = n.renderedPosition();
+        points.push([pos.x, pos.y]);
+      }
+    });
+    if (points.length < 2) return;
+
+    // Compute convex hull
+    const hull = convexHull(points);
+    if (hull.length < 3) return;
+
+    const ci = i % COMMUNITY_COLORS.length;
+    hullCtx.beginPath();
+    // Expand hull outward by 25px for padding
+    const cx = hull.reduce((s, p) => s + p[0], 0) / hull.length;
+    const cy2 = hull.reduce((s, p) => s + p[1], 0) / hull.length;
+    const expanded = hull.map(p => {
+      const dx = p[0] - cx, dy = p[1] - cy2;
+      const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+      return [p[0] + dx / dist * 25, p[1] + dy / dist * 25];
+    });
+    hullCtx.moveTo(expanded[0][0], expanded[0][1]);
+    for (let j = 1; j < expanded.length; j++) hullCtx.lineTo(expanded[j][0], expanded[j][1]);
+    hullCtx.closePath();
+    hullCtx.fillStyle = COMMUNITY_COLORS[ci];
+    hullCtx.fill();
+    hullCtx.strokeStyle = COMMUNITY_BORDER_COLORS[ci];
+    hullCtx.lineWidth = 1.5;
+    hullCtx.stroke();
+  });
+}
+
+function convexHull(points) {
+  if (points.length < 3) return points.slice();
+  const pts = points.slice().sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  const cross = (O, A, B) => (A[0] - O[0]) * (B[1] - O[1]) - (A[1] - O[1]) * (B[0] - O[0]);
+  const lower = [];
+  for (const p of pts) {
+    while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], p) <= 0) lower.pop();
+    lower.push(p);
+  }
+  const upper = [];
+  for (let i = pts.length - 1; i >= 0; i--) {
+    while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], pts[i]) <= 0) upper.pop();
+    upper.push(pts[i]);
+  }
+  upper.pop();
+  lower.pop();
+  return lower.concat(upper);
+}
+
+function clearHulls() {
+  if (hullCanvas && hullCtx) {
+    hullCtx.clearRect(0, 0, hullCanvas.width, hullCanvas.height);
+  }
+}
+
+// Redraw hulls on viewport changes when in cluster view
+cy.on('viewport', function() {
+  if (showingClusters) drawCommunityHulls();
+});
+
+// Cluster layout: position communities in a circle, members around center
+function setClusterLayout(btn) {
+  document.querySelectorAll('.layout-btn:not(.edge-filter)').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  showingClusters = true;
+  initHullCanvas();
+
+  const R = 220; // radius for community centers
+  const centerX = cy.width() / 2;
+  const centerY = cy.height() / 2;
+
+  const positions = {};
+  COMMUNITY_INFO.forEach((comm, i) => {
+    const angle = (2 * Math.PI * i) / COMMUNITY_INFO.length;
+    const commCx = centerX + R * Math.cos(angle);
+    const commCy = centerY + R * Math.sin(angle);
+    const memberR = Math.max(30, Math.sqrt(comm.members.length) * 28);
+    comm.members.forEach((sym, j) => {
+      const mAngle = (2 * Math.PI * j) / comm.members.length;
+      positions[sym] = {
+        x: commCx + memberR * Math.cos(mAngle),
+        y: commCy + memberR * Math.sin(mAngle),
+      };
+    });
+  });
+
+  cy.layout({
+    name: 'preset',
+    positions: node => positions[node.data('id')] || { x: centerX, y: centerY },
+    animate: true,
+    animationDuration: 600,
+    fit: true,
+    padding: 50,
+  }).run();
+
+  setTimeout(drawCommunityHulls, 650);
+}
+
+// Override setLayout to clear hulls when switching away from cluster view
+const _origSetLayout = setLayout;
+setLayout = function(name, btn) {
+  showingClusters = false;
+  clearHulls();
+  _origSetLayout(name, btn);
+};
+
+// Render community info panel
+function renderCommunityPanel() {
+  const panel = document.getElementById('community-info');
+  if (!panel) return;
+  let html = '<div class="community-header">';
+  html += '<span class="community-count">' + COMMUNITY_INFO.length + '</span> communities detected';
+  html += '</div>';
+
+  COMMUNITY_INFO.forEach((comm, i) => {
+    const ci = i % COMMUNITY_COLORS.length;
+    const borderColor = COMMUNITY_BORDER_COLORS[ci].replace('0.45', '0.8');
+    html += '<div class="community-item">';
+    html += '<div class="community-item-header">';
+    html += '<span class="community-dot" style="background:' + borderColor + '"></span>';
+    html += '<span class="community-label">' + comm.dominantRole + '</span>';
+    html += '<span class="community-size">' + comm.members.length + ' genes</span>';
+    html += '</div>';
+    html += '<div class="community-members">';
+    comm.members.sort().forEach(sym => {
+      html += '<span class="community-gene-tag" onclick="focusGene(\'' + sym + '\')">' + sym + '</span>';
+    });
+    html += '</div></div>';
+  });
+
+  panel.innerHTML = html;
+}
+renderCommunityPanel();
