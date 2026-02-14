@@ -66,10 +66,10 @@ def main():
         "in_gtex": "GTEx",
         "in_clinicaltrials": "ClinicalTrials",
         "in_string": "STRING",
-        "in_orphanet": "ORPHANET",
+        "in_orphanet": "Orphanet",
         "in_opentargets": "Open Targets",
-        "in_structures": "Structures",
-        "in_models": "Models",
+        "in_structures": "AlphaFold/PDB",
+        "in_models": "MGI/ZFIN",
     }
     source_urls = {
         "in_go": "http://geneontology.org/",

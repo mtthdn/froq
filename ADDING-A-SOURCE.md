@@ -1,16 +1,20 @@
 # Adding a Source to lacuene
 
-Adding a 13th (or Nth) biomedical database follows the same pattern as the existing 12.
+Adding a 17th (or Nth) biomedical database follows the same pattern as the existing 16.
 The model uses CUE lattice unification — each source contributes its own fields,
 and CUE merges them automatically.
 
 ## The Pattern
 
-Each source needs exactly 3 things:
+Each source needs these things:
 
 1. **A normalizer** (`normalizers/from_<source>.py`) — fetches data, writes CUE
 2. **Source-owned fields** in `model/schema.cue` — new optional fields + `_in_<source>` flag
 3. **A justfile recipe** — `normalize-<source>` entry
+4. **Projection wiring** — gap report, enrichment, sources projections
+5. **Site wiring** — source labels, URLs, filter keys in `to_site.py` and `to_summary.py`
+6. **Parallel runner** — add to `normalizers/run_parallel.py`
+7. **Tests** — add flag to expected list in `tests/test_pipeline.py`
 
 ## Worked Example: Adding KEGG Pathway Data
 
@@ -81,15 +85,45 @@ normalize-kegg:
 
 Add `python3 normalizers/from_kegg.py` to the `normalize:` recipe list.
 
-### Step 4: Update projections and site
+### Step 4: Update projections
 
-In `model/proj_sources.cue`, add `in_kegg: v._in_kegg` to the comprehension.
-In `model/proj_enrichment.cue`, add `has_pathway: v._in_kegg`.
-In `model/proj_gap_report.cue`, add `missing_kegg` list comprehension.
-In `generators/to_site.py`, add `"in_kegg": "KEGG"` to `source_names`, `source_urls`, and `filter_keys`.
-In `generators/static/app.js`, add KEGG to the gene detail panel and filter buttons.
+```cue
+// model/proj_sources.cue — add to the comprehension:
+in_kegg: v._in_kegg
 
-### Step 5: Validate
+// model/proj_enrichment.cue — add a semantic tier:
+has_pathway: v._in_kegg
+
+// model/proj_gap_report.cue — add missing list + summary count:
+missing_kegg: [for k, v in genes if !v._in_kegg {symbol: k}]
+// and in summary:
+missing_kegg_count: len(missing_kegg)
+// and in _source_flags:
+_c_kegg: v._in_kegg
+```
+
+### Step 5: Update site and summary generators
+
+```python
+# generators/to_site.py — add to source_names, source_urls, filter_keys:
+"in_kegg": "KEGG",
+
+# generators/to_summary.py — add to source_keys and source_labels:
+"in_kegg": "KEGG",
+```
+
+### Step 6: Update parallel runner and tests
+
+```python
+# normalizers/run_parallel.py — add to NORMALIZERS and CACHE_FILES:
+"from_kegg.py",
+"from_kegg.py": "data/kegg/kegg_cache.json",
+
+# tests/test_pipeline.py — add to expected_flags:
+"in_kegg",
+```
+
+### Step 7: Validate
 
 ```bash
 python3 normalizers/from_kegg.py
