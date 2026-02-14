@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install CUE
+        run: |
+          curl -fsSL https://cuelang.org/dl/cue_v0.11.1_linux_amd64.tar.gz | tar xz
+          sudo mv cue /usr/local/bin/
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate CUE model
+        run: cue vet -c ./model/
+
+      - name: Run integration tests
+        run: python3 tests/test_pipeline.py
+
+      - name: Generate site
+        run: |
+          python3 generators/to_vizdata.py
+          python3 generators/to_site.py
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: output/site/

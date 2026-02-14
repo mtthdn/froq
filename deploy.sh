@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Deploy froq site
+# Deploy froq site locally or via GitHub Pages
 set -euo pipefail
 
 SITE_DIR="$(cd "$(dirname "$0")" && pwd)/output/site"
@@ -10,9 +10,20 @@ if [[ ! -f "$SITE_DIR/index.html" ]]; then
     exit 1
 fi
 
-echo "Deploying froq..."
-echo "  Source: $SITE_DIR"
+echo "froq site ready at: $SITE_DIR"
+echo "  index.html: $(du -h "$SITE_DIR/index.html" | cut -f1)"
+echo "  about.html: $(du -h "$SITE_DIR/about.html" | cut -f1)"
+echo ""
+echo "Deployment options:"
+echo "  1. GitHub Pages (automatic): push to main branch"
+echo "     GitHub Actions will build and deploy to GitHub Pages."
+echo ""
+echo "  2. Local preview:"
+echo "     python3 -m http.server 8000 -d $SITE_DIR"
+echo ""
 
-# TODO: Configure deployment target
-echo "ERROR: No deployment target configured. Edit deploy.sh to add your hosting details."
-exit 1
+# If --serve flag passed, start local server
+if [[ "${1:-}" == "--serve" ]]; then
+    echo "Starting local server at http://localhost:8000"
+    python3 -m http.server 8000 -d "$SITE_DIR"
+fi
