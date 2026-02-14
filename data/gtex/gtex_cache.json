@@ -1,0 +1,477 @@
+{
+  "ADAM10": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000137845",
+    "top_tissues": []
+  },
+  "ALDH1A2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000128918",
+    "top_tissues": []
+  },
+  "AXIN2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000168646",
+    "top_tissues": []
+  },
+  "BMP2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000125845",
+    "top_tissues": []
+  },
+  "BMP4": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000125378",
+    "top_tissues": []
+  },
+  "BMP7": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000101144",
+    "top_tissues": []
+  },
+  "CDH11": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000140937",
+    "top_tissues": []
+  },
+  "CDH2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000170558",
+    "top_tissues": []
+  },
+  "CDH6": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000113361",
+    "top_tissues": []
+  },
+  "CHD7": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000171316",
+    "top_tissues": []
+  },
+  "CTNNB1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000168036",
+    "top_tissues": []
+  },
+  "CXCR4": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000121966",
+    "top_tissues": []
+  },
+  "DCT": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000080166",
+    "top_tissues": []
+  },
+  "DLL1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000275555",
+    "top_tissues": []
+  },
+  "DLX2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000115844",
+    "top_tissues": []
+  },
+  "DLX3": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000064195",
+    "top_tissues": []
+  },
+  "DLX5": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000105880",
+    "top_tissues": []
+  },
+  "DLX6": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000006377",
+    "top_tissues": []
+  },
+  "ECE1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000117298",
+    "top_tissues": []
+  },
+  "EDN1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000078401",
+    "top_tissues": []
+  },
+  "EDN3": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000124205",
+    "top_tissues": []
+  },
+  "EDNRA": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000151617",
+    "top_tissues": []
+  },
+  "EDNRB": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000136160",
+    "top_tissues": []
+  },
+  "ERBB3": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000065361",
+    "top_tissues": []
+  },
+  "ETS1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000134954",
+    "top_tissues": []
+  },
+  "EVC": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000072840",
+    "top_tissues": []
+  },
+  "FGF8": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000107831",
+    "top_tissues": []
+  },
+  "FGFR1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000077782",
+    "top_tissues": []
+  },
+  "FGFR2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000066468",
+    "top_tissues": []
+  },
+  "FGFR3": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000068078",
+    "top_tissues": []
+  },
+  "FN1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000115414",
+    "top_tissues": []
+  },
+  "FOXD3": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000187140",
+    "top_tissues": []
+  },
+  "GATA4": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000285109",
+    "top_tissues": []
+  },
+  "GBX2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000168505",
+    "top_tissues": []
+  },
+  "GDNF": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000168621",
+    "top_tissues": []
+  },
+  "GFRA1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000151892",
+    "top_tissues": []
+  },
+  "HAND1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000113196",
+    "top_tissues": []
+  },
+  "HAND2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000164107",
+    "top_tissues": []
+  },
+  "IRF6": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000117595",
+    "top_tissues": []
+  },
+  "ITGB1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000150093",
+    "top_tissues": []
+  },
+  "JAG1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000101384",
+    "top_tissues": []
+  },
+  "KIT": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000157404",
+    "top_tissues": []
+  },
+  "LEF1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000138795",
+    "top_tissues": []
+  },
+  "MEF2C": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000081189",
+    "top_tissues": []
+  },
+  "MITF": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000187098",
+    "top_tissues": []
+  },
+  "MMP2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000087245",
+    "top_tissues": []
+  },
+  "MMP9": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000100985",
+    "top_tissues": []
+  },
+  "MSX1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000163132",
+    "top_tissues": []
+  },
+  "MSX2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000120149",
+    "top_tissues": []
+  },
+  "MYCN": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000134323",
+    "top_tissues": []
+  },
+  "NF1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000196712",
+    "top_tissues": []
+  },
+  "NGFR": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000064300",
+    "top_tissues": []
+  },
+  "NKX2-5": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000183072",
+    "top_tissues": []
+  },
+  "NOTCH1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000148400",
+    "top_tissues": []
+  },
+  "NOTCH2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000134250",
+    "top_tissues": []
+  },
+  "NR2F1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000175745",
+    "top_tissues": []
+  },
+  "NR2F2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000185551",
+    "top_tissues": []
+  },
+  "NRP1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000099250",
+    "top_tissues": []
+  },
+  "PAX3": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000135903",
+    "top_tissues": []
+  },
+  "PAX6": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000007372",
+    "top_tissues": []
+  },
+  "PAX7": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000009709",
+    "top_tissues": []
+  },
+  "PHOX2B": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000109132",
+    "top_tissues": []
+  },
+  "PLXNA2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000076356",
+    "top_tissues": []
+  },
+  "PMEL": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000185664",
+    "top_tissues": []
+  },
+  "RAC1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000136238",
+    "top_tissues": []
+  },
+  "RARA": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000131759",
+    "top_tissues": []
+  },
+  "RET": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000165731",
+    "top_tissues": []
+  },
+  "RHOA": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000067560",
+    "top_tissues": []
+  },
+  "RUNX2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000124813",
+    "top_tissues": []
+  },
+  "SEMA3A": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000075213",
+    "top_tissues": []
+  },
+  "SEMA3C": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000075223",
+    "top_tissues": []
+  },
+  "SHH": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000164690",
+    "top_tissues": []
+  },
+  "SMAD1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000170365",
+    "top_tissues": []
+  },
+  "SNAI1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000124216",
+    "top_tissues": []
+  },
+  "SNAI2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000019549",
+    "top_tissues": []
+  },
+  "SOX10": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000100146",
+    "top_tissues": []
+  },
+  "SOX2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000181449",
+    "top_tissues": []
+  },
+  "SOX5": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000134532",
+    "top_tissues": []
+  },
+  "SOX8": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000005513",
+    "top_tissues": []
+  },
+  "SOX9": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000125398",
+    "top_tissues": []
+  },
+  "TBX1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000184058",
+    "top_tissues": []
+  },
+  "TBX5": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000089225",
+    "top_tissues": []
+  },
+  "TCOF1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000070814",
+    "top_tissues": []
+  },
+  "TFAP2A": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000137203",
+    "top_tissues": []
+  },
+  "TFAP2B": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000008196",
+    "top_tissues": []
+  },
+  "TGFBR1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000106799",
+    "top_tissues": []
+  },
+  "TGFBR2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000163513",
+    "top_tissues": []
+  },
+  "TWIST1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000122691",
+    "top_tissues": []
+  },
+  "TWIST2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000288335",
+    "top_tissues": []
+  },
+  "TYR": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000077498",
+    "top_tissues": []
+  },
+  "TYRP1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000107165",
+    "top_tissues": []
+  },
+  "WNT1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000125084",
+    "top_tissues": []
+  },
+  "WNT3A": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000154342",
+    "top_tissues": []
+  },
+  "ZEB2": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000169554",
+    "top_tissues": []
+  },
+  "ZIC1": {
+    "craniofacial_expression": 0.0,
+    "ensembl_id": "ENSG00000152977",
+    "top_tissues": []
+  }
+}

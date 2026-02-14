@@ -1,0 +1,322 @@
+{% extends "base.html.j2" %}
+
+{% block title %}About &mdash; froq Grant Gap Finder{% endblock %}
+
+{% block extra_style %}
+.header {
+  background: var(--surface); border-bottom: 1px solid var(--border); padding: 2rem;
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+.header h1 { font-size: 1.8rem; font-weight: 700; }
+.header h1 span { color: var(--accent); }
+.back-link {
+  color: var(--accent); text-decoration: none; font-size: 0.85rem; font-weight: 500;
+  padding: 6px 14px; border: 1px solid var(--border); border-radius: var(--radius); white-space: nowrap;
+}
+.back-link:hover { border-color: var(--accent); background: rgba(88,166,255,0.08); }
+.container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+h2 { font-size: 1.2rem; font-weight: 600; margin: 2rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+h2:first-child { margin-top: 0; }
+p { font-size: 0.9rem; line-height: 1.7; color: var(--text); margin-bottom: 1rem; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 1.5rem; }
+th, td { text-align: left; padding: 0.5rem 0.8rem; border-bottom: 1px solid var(--elevated); font-size: 0.85rem; }
+th { background: var(--elevated); color: var(--text-sec); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.8px; }
+td a { color: var(--accent); }
+.highlight {
+  background: rgba(88,166,255,0.06); border: 1px solid rgba(88,166,255,0.15);
+  border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1rem 0;
+}
+.highlight strong { color: var(--accent); }
+code { background: var(--elevated); padding: 2px 6px; border-radius: 4px; font-size: 0.85rem; }
+ol, ul { margin: 0 0 1rem 1.5rem; font-size: 0.9rem; line-height: 1.7; }
+li { margin-bottom: 0.3rem; }
+.footer { text-align: center; padding: 3rem 2rem 2rem; color: #484f58; font-size: 0.8rem; }
+.ref-list { list-style: none; margin-left: 0; }
+.ref-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--elevated); font-size: 0.85rem; }
+.ref-list li:last-child { border-bottom: none; }
+.ref-num { color: var(--text-sec); font-weight: 500; margin-right: 0.5rem; }
+{% endblock %}
+
+{% block body %}
+<div class="header">
+  <h1><span>froq</span> About &amp; Methodology</h1>
+  <a href="index.html" class="back-link">&larr; Back to Dashboard</a>
+</div>
+<div class="container">
+
+<h2>What is froq?</h2>
+<p>
+  <strong>froq</strong> (Frog Reconciliation of Queries) is a multi-source biomedical data
+  reconciliation tool that cross-references {{ total }} neural crest genes across {{ source_count }} public databases.
+  It surfaces <em>funding gaps</em>: genes with established clinical relevance but insufficient
+  experimental research coverage, helping program officers identify high-impact targets for
+  craniofacial and dental research funding.
+</p>
+
+<div class="highlight">
+  <strong>Key finding:</strong> Of {{ total }} neural crest genes, {{ critical }} have Mendelian disease
+  associations in OMIM but zero experimental datasets in the NIDCR-funded FaceBase repository.
+  These represent concrete opportunities for new research investment.
+</div>
+
+<h2>Capabilities</h2>
+<p>
+  froq provides eleven interactive features, each designed around a question a program officer
+  or PI might ask during grant review or portfolio planning.
+</p>
+<ol>
+  <li><strong>Funding Gap Finder</strong> &mdash; Identifies genes with confirmed Mendelian
+    disease associations (OMIM) but no experimental coverage in FaceBase, ranked by
+    publication scarcity. Click any gene to see its full profile, connected genes,
+    and recent publications.</li>
+
+  <li><strong>Source Coverage</strong> &mdash; Shows at a glance how completely each of the
+    {{ source_count }} databases covers the gene set. Immediately reveals which databases have
+    the largest gaps.</li>
+
+  <li><strong>Understudied Gene Ranking</strong> &mdash; Disease genes sorted by craniofacial
+    publication count (ascending). Low publication counts for genes with known pathogenic
+    variants suggest high-impact, low-competition research opportunities.</li>
+
+  <li><strong>Gene Landscape Graph</strong> &mdash; Interactive network visualization connecting
+    genes that share syndromes (pink edges) or HPO phenotypes (gray edges). Click any node
+    to highlight its neighborhood and open its detail panel. Hover over any edge to see the
+    syndrome or phenotype that connects two genes. Supports force-directed, circle,
+    and concentric layouts.</li>
+
+  <li><strong>Syndrome-Centric View</strong> &mdash; Flips the analysis from gene-level to
+    disease-level. Instead of asking &ldquo;which databases cover SOX10?&rdquo;, you can ask
+    &ldquo;how well is Waardenburg syndrome covered?&rdquo; Shows every multi-gene syndrome,
+    how many of its genes have FaceBase data, and aggregate publication and pathogenic variant
+    counts. Click a syndrome to highlight all its genes in the graph simultaneously.</li>
+
+  <li><strong>Portfolio Overlay</strong> &mdash; Paste a list of gene symbols from your current
+    funded portfolio (or a proposed grant) to instantly see which critical gaps your funding
+    addresses and which remain uncovered. Separates your genes into covered gaps (green),
+    unfunded gaps (red), and genes that are already well-covered. Useful for identifying
+    complementary funding opportunities or demonstrating portfolio impact to review panels.</li>
+
+  <li><strong>Cross-Source Filter</strong> &mdash; Interactive filter panel with tri-state
+    toggle buttons for each database (any / required / excluded) plus numeric ranges for
+    publication count and pathogenic variants. Ask compound questions like &ldquo;every gene
+    in OMIM but not in FaceBase with more than 100 pathogenic variants&rdquo; and see the
+    filtered results instantly.</li>
+
+  <li><strong>Gene Table Search</strong> &mdash; Real-time search across gene symbols,
+    syndrome names, and protein names. Filters the per-gene coverage table as you type.</li>
+
+  <li><strong>Change History</strong> &mdash; The pipeline saves a timestamped snapshot of
+    the gap state each time it runs. Once multiple snapshots exist, the change history
+    shows which gaps opened or closed between runs &mdash; directly measuring the impact
+    of research investments over time.</li>
+
+  <li><strong>Exportable Briefing</strong> &mdash; Generates a plain-text summary paragraph
+    with top priority targets, suitable for pasting into emails or grant reviews.
+    Copy to clipboard in one click.</li>
+
+  <li><strong>CSV Export</strong> &mdash; Full dataset export with {{ csv_column_count }} columns covering all
+    {{ source_count }} sources, publication counts, pathogenic variants, and syndrome associations.
+    Exports the currently filtered view when filters are active.</li>
+</ol>
+
+<h2>What froq does that individual databases don&rsquo;t</h2>
+<p>
+  Each of froq&rsquo;s {{ source_count }} data sources is excellent at what it does. OMIM catalogs
+  disease associations with unmatched depth. FaceBase curates craniofacial datasets with
+  careful experimental metadata. PubMed indexes the literature comprehensively. The challenge
+  isn&rsquo;t the quality of any single source &mdash; it&rsquo;s that no single source answers
+  cross-cutting questions:
+</p>
+<ul>
+  <li><strong>Gap detection across sources.</strong> OMIM can tell you a gene causes
+    Waardenburg syndrome. FaceBase can tell you what datasets it has. Neither tells you which
+    disease genes <em>lack</em> FaceBase data. froq computes that automatically for every gene
+    in the set.</li>
+
+  <li><strong>Disease-level aggregation.</strong> A syndrome like Treacher Collins involves
+    multiple genes (TCOF1, POLR1C, POLR1D, POLR1B). Evaluating research coverage for the
+    syndrome as a whole &mdash; rather than gene by gene &mdash; requires combining OMIM,
+    FaceBase, and PubMed data in a way none of those databases do individually.</li>
+
+  <li><strong>Portfolio-aware analysis.</strong> Funding agencies maintain portfolios of
+    supported research. Knowing which gaps a proposed grant would fill &mdash; and which would
+    remain &mdash; requires overlaying portfolio data against the gap analysis. This is a
+    question no public database is designed to answer.</li>
+
+  <li><strong>Reproducible reconciliation.</strong> froq&rsquo;s pipeline uses
+    <a href="https://cuelang.org/">CUE</a> lattice unification to merge all {{ source_count }} sources
+    structurally, not through ad-hoc scripts. Adding another source means adding one normalizer;
+    the type system guarantees it integrates cleanly with the existing model. The full pipeline
+    rebuilds from cached data in under 10 seconds.</li>
+</ul>
+
+<h2>Data Sources</h2>
+<p>
+  Each gene is queried against {{ source_count }} biomedical databases. The presence or absence of a gene
+  in each source contributes to its coverage profile and gap severity assessment.
+</p>
+<table>
+  <thead><tr><th>Source</th><th>Coverage</th></tr></thead>
+  <tbody>
+{% for key, label in source_names.items() %}
+    <tr><td><a href="{{ source_urls.get(key, '#') }}" target="_blank">{{ label }}</a></td><td>{{ source_counts.get(key, 0) }}/{{ total }}</td></tr>
+{% endfor %}
+  </tbody>
+</table>
+
+<h2>Source Descriptions</h2>
+<ol>
+  <li><strong><a href="http://geneontology.org/">Gene Ontology (GO)</a></strong> &mdash;
+    Provides standardized molecular function, biological process, and cellular component
+    annotations. Every gene in our set is annotated with GO terms via the
+    <a href="https://www.ebi.ac.uk/QuickGO/">QuickGO</a> API.
+    <em>Ashburner et al. (2000) Nature Genetics 25:25&ndash;29.</em></li>
+
+  <li><strong><a href="https://www.omim.org/">OMIM</a></strong> &mdash;
+    Online Mendelian Inheritance in Man. Catalogs human genes and genetic disorders.
+    A gene's presence in OMIM with associated syndromes indicates established
+    disease relevance.
+    <em>Amberger et al. (2019) Nucleic Acids Research 47:D1038&ndash;D1043.</em></li>
+
+  <li><strong><a href="https://hpo.jax.org/">Human Phenotype Ontology (HPO)</a></strong> &mdash;
+    Standardized vocabulary of phenotypic abnormalities. Provides the phenotype-to-gene
+    associations used to compute shared-phenotype edges in the gene landscape graph.
+    <em>K&ouml;hler et al. (2021) Nucleic Acids Research 49:D1207&ndash;D1217.</em></li>
+
+  <li><strong><a href="https://www.uniprot.org/">UniProt</a></strong> &mdash;
+    Universal Protein Resource. Provides protein names, accession numbers, and
+    functional annotations for each gene product.
+    <em>UniProt Consortium (2023) Nucleic Acids Research 51:D523&ndash;D531.</em></li>
+
+  <li><strong><a href="https://www.facebase.org/">FaceBase</a></strong> &mdash;
+    NIDCR-funded data repository for craniofacial research. Contains experimental
+    datasets (RNA-seq, ChIP-seq, imaging, etc.). A gene's <em>absence</em> from FaceBase
+    despite disease relevance represents the core funding gap this tool identifies.
+    <em>Brinkley et al. (2020) Orthodontics &amp; Craniofacial Research 23 Suppl 1:44&ndash;51.</em></li>
+
+  <li><strong><a href="https://www.ncbi.nlm.nih.gov/clinvar/">ClinVar</a></strong> &mdash;
+    NCBI's archive of clinically significant genomic variants. We query pathogenic and
+    likely pathogenic variants per gene, providing a measure of clinical genetic evidence.
+    <em>Landrum et al. (2020) Nucleic Acids Research 48:D845&ndash;D855.</em></li>
+
+  <li><strong><a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a></strong> &mdash;
+    NCBI's biomedical literature index. We query each gene combined with &ldquo;craniofacial
+    OR neural crest&rdquo; to count domain-specific publications. Low publication counts
+    for disease-associated genes indicate understudied targets.
+    Publication data queried via <a href="https://www.ncbi.nlm.nih.gov/books/NBK25501/">NCBI E-utilities</a>.</li>
+
+  <li><strong><a href="https://gnomad.broadinstitute.org/">gnomAD</a></strong> &mdash;
+    Genome Aggregation Database. Provides population allele frequencies and gene-level
+    constraint metrics (pLI, LOEUF) that quantify how intolerant a gene is to loss-of-function
+    variation. High constraint scores indicate essential genes where mutations are strongly
+    selected against.</li>
+
+  <li><strong><a href="https://reporter.nih.gov/">NIH Reporter</a></strong> &mdash;
+    NIH Research Portfolio Online Reporting Tools. Tracks active NIH-funded grants
+    mentioning each gene, providing a direct measure of current federal research investment.
+    Genes with disease relevance but no active grants represent funding opportunities.</li>
+
+  <li><strong><a href="https://gtexportal.org/">GTEx</a></strong> &mdash;
+    Genotype-Tissue Expression project. Provides tissue-specific gene expression data
+    across 54 human tissues. Used to confirm craniofacial-relevant expression patterns
+    and identify genes with tissue-specific regulatory programs.</li>
+</ol>
+
+<h2>Methodology</h2>
+
+<h2 style="font-size:1rem;border:none;margin-top:0.5rem">Gene Selection</h2>
+<p>
+  The 95 genes span the neural crest gene regulatory network as described in the
+  literature, organized into 8 developmental categories: border specification,
+  neural crest specifiers, EMT/migration, signaling pathways, craniofacial patterning,
+  melanocyte/pigmentation, enteric nervous system, and cardiac neural crest.
+  <em>Simoes-Costa &amp; Bronner (2015) Development 142:242&ndash;257</em> and
+  <em>Martik &amp; Bronner (2017) Developmental Biology 429:293&ndash;302.</em>
+</p>
+
+<h2 style="font-size:1rem;border:none;margin-top:0.5rem">Data Pipeline</h2>
+<p>
+  Each source is fetched by a Python normalizer script that queries the source API,
+  caches raw results locally, and emits a <a href="https://cuelang.org/">CUE</a> data
+  file. CUE&rsquo;s lattice-based unification merges all {{ source_count }} sources into a single typed
+  model per gene &mdash; each source owns its fields, and CUE guarantees structural
+  consistency across the full dataset without imperative merge logic.
+</p>
+
+<h2 style="font-size:1rem;border:none;margin-top:0.5rem">Gap Detection</h2>
+<p>
+  The &ldquo;critical gap&rdquo; definition is computed as a CUE projection:
+</p>
+<div class="highlight" style="font-family:monospace;font-size:0.85rem;white-space:pre-wrap">critical: [for k, v in genes
+  if v._in_omim &amp;&amp; !v._in_facebase {
+    symbol: k
+    syndromes: v.omim_syndromes
+    pub_count: v.pubmed_total
+  }]</div>
+<p>
+  A gene is &ldquo;critical&rdquo; when it has Mendelian disease associations (OMIM) but
+  lacks experimental datasets in the NIDCR-funded FaceBase repository. The gap list is
+  sorted by publication count (ascending) to prioritize the most understudied genes.
+</p>
+
+<h2 style="font-size:1rem;border:none;margin-top:0.5rem">Graph Construction</h2>
+<p>
+  The gene landscape graph connects genes that share HPO phenotypes (gray edges) or
+  OMIM syndromes (pink edges). Shared-phenotype edges are filtered to phenotypes
+  present in 2&ndash;5 genes to avoid edge explosion from universal phenotypes like
+  &ldquo;Intellectual disability.&rdquo; Node size reflects log-scaled craniofacial
+  publication count; color indicates developmental role.
+</p>
+
+<h2>Technology</h2>
+<p>
+  froq is built with <a href="https://cuelang.org/">CUE</a> for data unification,
+  Python for normalization and generation, and <a href="https://js.cytoscape.org/">Cytoscape.js</a>
+  for graph visualization. The pipeline is fully reproducible from cached source data.
+  Source code is available on <a href="https://github.com/mtthdn/froq">GitHub</a>.
+</p>
+
+<h2>References</h2>
+<ul class="ref-list">
+  <li><span class="ref-num">[1]</span> Ashburner M et al. &ldquo;Gene Ontology: tool for the unification of biology.&rdquo;
+    <em>Nature Genetics</em> 25:25&ndash;29 (2000).
+    <a href="https://doi.org/10.1038/75556">doi:10.1038/75556</a></li>
+
+  <li><span class="ref-num">[2]</span> Amberger JS et al. &ldquo;OMIM.org: leveraging knowledge across phenotype-gene relationships.&rdquo;
+    <em>Nucleic Acids Research</em> 47:D1038&ndash;D1043 (2019).
+    <a href="https://doi.org/10.1093/nar/gky1151">doi:10.1093/nar/gky1151</a></li>
+
+  <li><span class="ref-num">[3]</span> K&ouml;hler S et al. &ldquo;The Human Phenotype Ontology in 2021.&rdquo;
+    <em>Nucleic Acids Research</em> 49:D1207&ndash;D1217 (2021).
+    <a href="https://doi.org/10.1093/nar/gkaa1043">doi:10.1093/nar/gkaa1043</a></li>
+
+  <li><span class="ref-num">[4]</span> UniProt Consortium. &ldquo;UniProt: the Universal Protein Knowledgebase in 2023.&rdquo;
+    <em>Nucleic Acids Research</em> 51:D523&ndash;D531 (2023).
+    <a href="https://doi.org/10.1093/nar/gkac1052">doi:10.1093/nar/gkac1052</a></li>
+
+  <li><span class="ref-num">[5]</span> Brinkley JF et al. &ldquo;The FaceBase Consortium: a comprehensive resource for craniofacial researchers.&rdquo;
+    <em>Orthodontics &amp; Craniofacial Research</em> 23 Suppl 1:44&ndash;51 (2020).
+    <a href="https://doi.org/10.1111/ocr.12385">doi:10.1111/ocr.12385</a></li>
+
+  <li><span class="ref-num">[6]</span> Landrum MJ et al. &ldquo;ClinVar: improvements to accessing data.&rdquo;
+    <em>Nucleic Acids Research</em> 48:D845&ndash;D855 (2020).
+    <a href="https://doi.org/10.1093/nar/gkz972">doi:10.1093/nar/gkz972</a></li>
+
+  <li><span class="ref-num">[7]</span> Simoes-Costa M, Bronner ME. &ldquo;Establishing neural crest identity: a gene regulatory recipe.&rdquo;
+    <em>Development</em> 142:242&ndash;257 (2015).
+    <a href="https://doi.org/10.1242/dev.105445">doi:10.1242/dev.105445</a></li>
+
+  <li><span class="ref-num">[8]</span> Martik ML, Bronner ME. &ldquo;Regulatory logic underlying diversification of the neural crest.&rdquo;
+    <em>Developmental Biology</em> 429:293&ndash;302 (2017).
+    <a href="https://doi.org/10.1016/j.ydbio.2017.05.028">doi:10.1016/j.ydbio.2017.05.028</a></li>
+</ul>
+
+<div class="footer">
+  froq &mdash; CUE lattice unification for multi-source biomedical data &middot;
+  <a href="https://github.com/mtthdn/froq">GitHub</a>
+</div>
+
+</div>
+{% endblock %}

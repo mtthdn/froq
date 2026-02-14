@@ -1,0 +1,290 @@
+{
+  "SOX9": {
+    "datasets": [
+      {
+        "RID": "1-4XHY",
+        "accession": "FB00001018",
+        "title": "Activity of predicted human neural crest enhancer 1.35Mb upstream of SOX9 in transgenic mouse embryos.",
+        "species": "Mus musculus",
+        "assay_type": "enhancer assay"
+      },
+      {
+        "RID": "1-4XFJ",
+        "accession": "FB00001016",
+        "title": "Activity of predicted human neural crest enhancer 1.25Mb upstream of SOX9 in E11.5 transgenic mouse embryo",
+        "species": "Mus musculus",
+        "assay_type": "enhancer assay"
+      },
+      {
+        "RID": "1-4XJP",
+        "accession": "FB00001019",
+        "title": "Activity of human neural crest enhancer 1.45Mb upstream of SOX9 in transgenic mouse embryos",
+        "species": "Mus musculus",
+        "assay_type": "enhancer assay"
+      },
+      {
+        "RID": "1-X5ER",
+        "accession": "FB00001126",
+        "title": "Gene summary for Sox9",
+        "species": "Mus musculus",
+        "assay_type": "gene summary"
+      },
+      {
+        "RID": "1-4XGA",
+        "accession": "FB00001017",
+        "title": "Activity of human neural crest enhancer near SOX9 in transgenic mouse embryos",
+        "species": "Mus musculus",
+        "assay_type": "enhancer assay"
+      }
+    ]
+  },
+  "TWIST1": {
+    "datasets": [
+      {
+        "RID": "5N-K4X4",
+        "accession": "FB00001380",
+        "title": "Regenerated coronal suture restored neurocognitive defects in a Twist1 craniosynostosis mouse model",
+        "species": "Mus musculus",
+        "assay_type": "imaging"
+      },
+      {
+        "RID": "VHE",
+        "accession": "FB00000805",
+        "title": "Frontal suture, WT and Twist1+/- (Saethre-Chotzen syndrome mouse model), E16.5 and E18.5",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "2-557P",
+        "accession": "FB00001198",
+        "title": "Coronal Suture, WT, Fgfr2+/S252W (Apert syndrome mouse model), Twist1+/- (Saethre-Chotzen syndrome mouse model), E14.5",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "1-X280",
+        "accession": "FB00001124",
+        "title": "Runx2-Twist1 interaction coordinates cranial neural crest guidance of soft palate myogenesis",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "TJY",
+        "accession": "FB00000902",
+        "title": "Coronal suture, WT and Twist1+/- (Saethre-Chotzen syndrome mouse model), E18.5",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "TJC",
+        "accession": "FB00000903",
+        "title": "Coronal suture, WT and Twist1+/- (Saethre-Chotzen syndrome mouse model), E16.5",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "1-4TSP",
+        "accession": "FB00001013",
+        "title": "Single Cell Sequencing - Frontal Suture, Wild Type, Twist1+/-, and Fgfr2+/S252W, (E16.5, E18.5, P10 and P28)",
+        "species": "Mus musculus",
+        "assay_type": "scRNA-seq"
+      },
+      {
+        "RID": "VXJ",
+        "accession": "FB00000776.01",
+        "title": "Wnt GFP Twist1 Wnt1 Dapi BF HCR Right Side Stitched",
+        "species": "Mus musculus",
+        "assay_type": "imaging"
+      },
+      {
+        "RID": "VQ8",
+        "accession": "FB00000777.01",
+        "title": "Wnt1 GFP Twist1 BF Pax2 DAPI HCR Right Side Stitched",
+        "species": "Mus musculus",
+        "assay_type": "imaging"
+      }
+    ]
+  },
+  "FGFR2": {
+    "datasets": [
+      {
+        "RID": "1-T8JG",
+        "accession": "FB00001112",
+        "title": "Premaxillary-Maxillary Suture, WT and Fgfr2+/S252W (Apert syndrome mouse model), E16.5 and E18.5",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "TJP",
+        "accession": "FB00000904",
+        "title": "Frontal suture, Fgfr2+/S252W (Apert syndrome mouse model), E16.5 and E18.5",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "2-557P",
+        "accession": "FB00001198",
+        "title": "Coronal Suture, WT, Fgfr2+/S252W (Apert syndrome mouse model), Twist1+/- (Saethre-Chotzen syndrome mouse model), E14.5",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "1-3SWE",
+        "accession": "FB00000985",
+        "title": "Interpalatine suture, WT and Fgfr2+/S252W (Apert syndrome mouse model), E16.5 and E18.5",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "V2C",
+        "accession": "FB00000681.01",
+        "title": "microCT - Bone Tissue of a K14-Cre; Fgfr2fl/fl mouse at E16.5",
+        "species": "Mus musculus",
+        "assay_type": "microCT"
+      },
+      {
+        "RID": "VD0",
+        "accession": "FB00000749.01",
+        "title": "microCT - Soft Tissue of a K14-Cre;Fgfr2fl/fl mouse at E15.5",
+        "species": "Mus musculus",
+        "assay_type": "microCT"
+      }
+    ]
+  },
+  "IRF6": {
+    "datasets": [
+      {
+        "RID": "1-X5K8",
+        "accession": "FB00001144",
+        "title": "Gene summary for IRF6",
+        "species": "Mus musculus",
+        "assay_type": "gene summary"
+      }
+    ]
+  },
+  "SHH": {
+    "datasets": [
+      {
+        "RID": "3-JVE6",
+        "accession": "FB00001209",
+        "title": "Shh: A standardized mouse morphology dataset for MusMorph",
+        "species": "Mus musculus",
+        "assay_type": "morphology"
+      }
+    ]
+  },
+  "RUNX2": {
+    "datasets": [
+      {
+        "RID": "44-HVCJ",
+        "accession": "FB00001363",
+        "title": "BRD4 binds to active cranial neural crest enhancers to regulate RUNX2 activity during osteoblast differentiation",
+        "species": "Mus musculus",
+        "assay_type": "ChIP-seq"
+      },
+      {
+        "RID": "1-YKN2",
+        "accession": "FB00001185",
+        "title": "Runx2 plays a critical role in tooth root development",
+        "species": "Mus musculus",
+        "assay_type": "imaging"
+      },
+      {
+        "RID": "1-X5MR",
+        "accession": "FB00001150",
+        "title": "Gene summary for Runx2",
+        "species": "Mus musculus",
+        "assay_type": "gene summary"
+      },
+      {
+        "RID": "1-X280",
+        "accession": "FB00001124",
+        "title": "Runx2-Twist1 interaction coordinates cranial neural crest guidance of soft palate myogenesis",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "1-S7GJ",
+        "accession": "FB00001105",
+        "title": "Runx2 regulates mouse tooth root development via activation of WNT inhibitor Notum",
+        "species": "Mus musculus",
+        "assay_type": "RNA-seq"
+      },
+      {
+        "RID": "1-RK82",
+        "accession": "FB00001104",
+        "title": "Runx2+ niche cells maintain mesenchymal tissue homeostasis through IGF signaling",
+        "species": "Mus musculus",
+        "assay_type": "scRNA-seq"
+      }
+    ]
+  },
+  "MSX1": {
+    "datasets": [
+      {
+        "RID": "TRP",
+        "accession": "FB00000601.01",
+        "title": "microCT - Soft Tissue of a Msx1+/+ Control mouse at E16.5",
+        "species": "Mus musculus",
+        "assay_type": "microCT"
+      },
+      {
+        "RID": "V2T",
+        "accession": "FB00000602.01",
+        "title": "microCT - Bone Tissue of an Msx1-/- mouse at E16.5",
+        "species": "Mus musculus",
+        "assay_type": "microCT"
+      },
+      {
+        "RID": "TTW",
+        "accession": "FB00000286.02",
+        "title": "microCT - Bone Tissue of Msx1-/- mouse at P0",
+        "species": "Mus musculus",
+        "assay_type": "microCT"
+      },
+      {
+        "RID": "VEM",
+        "accession": "FB00000486.01",
+        "title": "microCT - Soft Tissue of Msx1-- Mice at E16.5",
+        "species": "Mus musculus",
+        "assay_type": "microCT"
+      },
+      {
+        "RID": "VVP",
+        "accession": "FB00000395.01",
+        "title": "microMRI images of skulls of Msx1+/- mice at E18.5",
+        "species": "Mus musculus",
+        "assay_type": "microMRI"
+      }
+    ]
+  },
+  "TBX1": {
+    "datasets": [
+      {
+        "RID": "1-X5NG",
+        "accession": "FB00001153",
+        "title": "Gene summary for Tbx1",
+        "species": "Mus musculus",
+        "assay_type": "gene summary"
+      }
+    ]
+  },
+  "TFAP2A": {
+    "datasets": [
+      {
+        "RID": "1-YBWE",
+        "accession": "FB00001180",
+        "title": "micro CT of Tfap2a;Tfap2b;Crect mutant and control mice",
+        "species": "Mus musculus",
+        "assay_type": "microCT"
+      },
+      {
+        "RID": "1-YBXR",
+        "accession": "FB00001181",
+        "title": "micro CT of Tfap2a;Tfap2b;Wnt1-Cre mutant and control mice",
+        "species": "Mus musculus",
+        "assay_type": "microCT"
+      }
+    ]
+  }
+}

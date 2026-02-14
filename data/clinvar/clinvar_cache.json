@@ -1,0 +1,2852 @@
+{
+  "ADAM10": {
+    "pathogenic_count": 20,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q21.3-22.31(chr15:57544843-64324372)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q21.3-22.2(chr15:54020810-62086530)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q21.1-22.2(chr15:48589845-63543438)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q21.1-22.2(chr15:48000433-60747551)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      }
+    ]
+  },
+  "ALDH1A2": {
+    "pathogenic_count": 20,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q21.3-22.31(chr15:57544843-64324372)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q21.3(chr15:54281939-58773686)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q21.3-22.2(chr15:54020810-62086530)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q21.1-22.2(chr15:48589845-63543438)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003888.4(ALDH1A2):c.1040G>A (p.Arg347His)"
+      }
+    ]
+  },
+  "AXIN2": {
+    "pathogenic_count": 202,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004655.4(AXIN2):c.2286dup (p.Glu763Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004655.4(AXIN2):c.1156dup (p.Glu386fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004655.4(AXIN2):c.185T>A (p.Leu62Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004655.4(AXIN2):c.265C>T (p.Gln89Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004655.4(AXIN2):c.1987dup (p.Trp663fs)"
+      }
+    ]
+  },
+  "BMP2": {
+    "pathogenic_count": 66,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001200.4(BMP2):c.326_327del (p.Val109fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001200.4(BMP2):c.892A>T (p.Arg298Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20p12.3(chr20:6289592-8586513)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001200.4(BMP2):c.217_218dup (p.Val74fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001200.4(BMP2):c.843dup (p.Arg282fs)"
+      }
+    ]
+  },
+  "BMP4": {
+    "pathogenic_count": 34,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001202.6(BMP4):c.253del (p.Asp85fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001202.6(BMP4):c.323dup (p.Arg109fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001202.6(BMP4):c.245_248dup (p.Met83fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001202.6(BMP4):c.602del (p.Asp201fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001202.6(BMP4):c.371-2A>G"
+      }
+    ]
+  },
+  "BMP7": {
+    "pathogenic_count": 17,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh38/hg38 20q13.13-13.33(chr20:50805746-64334135)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001719.3(BMP7):c.523C>T (p.Arg175Trp)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001719.3(BMP7):c.254A>T (p.Asp85Val)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20q13.31-13.32(chr20:55292205-57866365)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20q13.2-13.33(chr20:51799648-62916626)x3"
+      }
+    ]
+  },
+  "CDH11": {
+    "pathogenic_count": 33,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16q12.2-22.1(chr16:55407065-67180113)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16q11.2-24.3(chr16:46432879-90294753)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16q21-24.1(chr16:62746020-84485022)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000016.9:g.(?_48799549)_(70756330_?)dup"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16q12.2-22.1(chr16:55329260-67180113)x1"
+      }
+    ]
+  },
+  "CDH2": {
+    "pathogenic_count": 57,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001792.5(CDH2):c.313T>C (p.Tyr105His)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001792.5(CDH2):c.1522G>A (p.Glu508Lys)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 18q11.2-12.1(chr18:21553578-32172480)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 18q11.2-23(chr18:19309942-78014123)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      }
+    ]
+  },
+  "CDH6": {
+    "pathogenic_count": 29,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p15.33-13.3(chr5:113577-31773283)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p15.33-13.2(chr5:113577-35613146)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh38/hg38 5p13.3-12(chr5:29299893-45899898)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p15.33-13.3(chr5:113577-31448527)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p13.3-11(chr5:29348753-46389339)x3"
+      }
+    ]
+  },
+  "CHD7": {
+    "pathogenic_count": 838,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_017780.4(CHD7):c.8564_8567del (p.Lys2855fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_017780.4(CHD7):c.3392T>C (p.Leu1131Pro)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_017780.4(CHD7):c.7536del (p.Arg2512fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_017780.4(CHD7):c.5627C>G (p.Ser1876Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_017780.4(CHD7):c.3522+2T>C"
+      }
+    ]
+  },
+  "CTNNB1": {
+    "pathogenic_count": 256,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001904.4(CTNNB1):c.955_974del (p.Gly319fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 3p26.3-14.3(chr3:2263690-55016039)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001904.4(CTNNB1):c.529C>T (p.Gln177Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001904.4(CTNNB1):c.1857_1864del (p.Glu620fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001904.4(CTNNB1):c.253dup (p.Gln85fs)"
+      }
+    ]
+  },
+  "CXCR4": {
+    "pathogenic_count": 51,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003467.3(CXCR4):c.977_978del (p.Leu326fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003467.3(CXCR4):c.979_980insG (p.Lys327fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003467.3(CXCR4):c.986_990del (p.Leu329fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003467.3(CXCR4):c.997A>T (p.Lys333Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003467.3(CXCR4):c.1016_1017dup (p.Val340fs)"
+      }
+    ]
+  },
+  "DCT": {
+    "pathogenic_count": 87,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 13q31.2-33.1(chr13:88690727-102272954)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001922.5(DCT):c.555dup (p.Val186fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001922.5(DCT):c.697C>T (p.Arg233Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001922.5(DCT):c.212G>A (p.Trp71Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 13q31.1-34(chr13:84669397-115107733)x1"
+      }
+    ]
+  },
+  "DLL1": {
+    "pathogenic_count": 143,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005618.4(DLL1):c.1077C>A (p.Tyr359Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005618.4(DLL1):c.150del (p.Pro51fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005618.4(DLL1):c.1143C>A (p.Cys381Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005618.4(DLL1):c.120dup (p.Asn41fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 6q27(chr6:170591962-170893669)x1"
+      }
+    ]
+  },
+  "DLX2": {
+    "pathogenic_count": 20,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q31.1-32.2(chr2:171436894-189531954)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q24.2-31.1(chr2:162692199-174452488)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2p25.3-q37.3(chr2:1-243199373)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q31.1-35(chr2:169829974-215521436)"
+      }
+    ]
+  },
+  "DLX3": {
+    "pathogenic_count": 20,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005220.3(DLX3):c.535A>C (p.Asn179His)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 17q12-22(chr17:41196270-41277589)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005220.3(DLX3):c.537C>A (p.Asn179Lys)"
+      }
+    ]
+  },
+  "DLX5": {
+    "pathogenic_count": 28,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q21.3(chr7:96630308-96675313)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005221.6(DLX5):c.512C>T (p.Ala171Val)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q11.23-21.3(chr7:74666254-97791584)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005221.6(DLX5):c.481T>C (p.Tyr161His)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000007.13:g.(?_94024344)_(100860555_?)del"
+      }
+    ]
+  },
+  "DLX6": {
+    "pathogenic_count": 19,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q21.3(chr7:96630308-96675313)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q11.23-21.3(chr7:74666254-97791584)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000007.13:g.(?_94024344)_(100860555_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q21.2-22.1(chr7:92721627-98311537)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q21.3(chr7:96264152-96860892)x1"
+      }
+    ]
+  },
+  "ECE1": {
+    "pathogenic_count": 13,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p36.32-36.12(chr1:4436802-22782007)x2"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p36.13-36.12(chr1:17291707-23016395)x4"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh38/hg38 1p36.33-35.1(chr1:99125-34026935)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p36.13-36.12(chr1:16785250-23491592)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001397.3(ECE1):c.1966G>A (p.Gly656Arg)"
+      }
+    ]
+  },
+  "EDN1": {
+    "pathogenic_count": 28,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 6p25.3-22.3(chr6:156975-15478095)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 6p25.3-22.3(chr6:820000-21700000)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 6p24.1-22.3(chr6:12005630-22849647)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 6p24.3-22.3(chr6:8269414-17402660)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 6p25.3-22.3(chr6:156974-23221621)x3"
+      }
+    ]
+  },
+  "EDN3": {
+    "pathogenic_count": 25,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000020.10:g.57331908_60789961del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000020.10:g.55906911_58646228del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh38/hg38 20q13.13-13.33(chr20:50805746-64334135)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20q13.32-13.33(chr20:56835739-62915555)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20q13.2-13.33(chr20:51799648-62916626)x3"
+      }
+    ]
+  },
+  "EDNRA": {
+    "pathogenic_count": 28,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q27-35.2(chr4:123399154-190957473)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q24-35.2(chr4:101203509-190957473)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p12-q35.2(chr4:45455621-191003541)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q26-32.3(chr4:117518683-168174703)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000004.11:g.(?_146560292)_(149358012_?)del"
+      }
+    ]
+  },
+  "EDNRB": {
+    "pathogenic_count": 113,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 13q14.3-31.2(chr13:54206989-88417670)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001122659.3(EDNRB):c.661G>T (p.Glu221Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000013.11:g.77900653CT[1]"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001122659.3(EDNRB):c.431C>T (p.Ala144Val)"
+      }
+    ]
+  },
+  "ERBB3": {
+    "pathogenic_count": 26,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001982.4(ERBB3):c.874+1G>A"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001982.4(ERBB3):c.234+2T>C"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001982.4(ERBB3):c.3223del (p.Ser1075fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001982.4(ERBB3):c.237G>A (p.Trp79Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001982.4(ERBB3):c.83-2A>G"
+      }
+    ]
+  },
+  "ETS1": {
+    "pathogenic_count": 76,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 11q23.3-25(chr11:116683755-134937416)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 11q24.1-25(chr11:123523103-134938470)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 11q24.1-25(chr11:121423232-134938470)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 11q24.2-25(chr11:125511834-134938470)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      }
+    ]
+  },
+  "EVC": {
+    "pathogenic_count": 410,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-16.1(chr4:1752407-7489009)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-15.2(chr4:68346-23792768)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-16.1(chr4:1675467-10694991)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_153717.3(EVC):c.1782G>A (p.Trp594Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-16.2(chr4:68346-5762161)x1"
+      }
+    ]
+  },
+  "FGF8": {
+    "pathogenic_count": 36,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10q23.1-25.1(chr10:87456174-107789979)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_033163.5(FGF8):c.32+1G>C"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000010.10:g.103001852_103543913dup"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000010.10:g.103012761_103546704dup"
+      }
+    ]
+  },
+  "FGFR1": {
+    "pathogenic_count": 278,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 8p11.23-11.1(chr8:36650289-43776564)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_023110.3(FGFR1):c.403_407del (p.Ser135fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_023110.3(FGFR1):c.513dup (p.Lys172fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_023110.3(FGFR1):c.652_653del (p.Asp218fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_023110.3(FGFR1):c.729C>A (p.Tyr243Ter)"
+      }
+    ]
+  },
+  "FGFR2": {
+    "pathogenic_count": 175,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000141.5(FGFR2):c.1966T>C (p.Tyr656His)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000141.5(FGFR2):c.1022C>T (p.Thr341Met)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000141.5(FGFR2):c.992A>T (p.Asn331Ile)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000141.5(FGFR2):c.1018T>A (p.Tyr340Asn)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000141.5(FGFR2):c.940-2A>T"
+      }
+    ]
+  },
+  "FGFR3": {
+    "pathogenic_count": 206,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-16.1(chr4:1752407-7489009)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-15.2(chr4:68346-23792768)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-16.1(chr4:1675467-10694991)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-16.2(chr4:68346-5762161)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-15.33(chr4:68346-11943374)x1"
+      }
+    ]
+  },
+  "FN1": {
+    "pathogenic_count": 47,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q33.3-37.3(chr2:206965837-242783384)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_212482.4(FN1):c.637T>C (p.Cys213Arg)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_212482.4(FN1):c.5773T>C (p.Trp1925Arg)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_212482.4(FN1):c.938G>T (p.Gly313Val)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_212482.4(FN1):c.3010_3011insTC (p.Gln1004fs)"
+      }
+    ]
+  },
+  "FOXD3": {
+    "pathogenic_count": 20,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p31.3-22.3(chr1:61397219-85940743)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p34.1-22.2(chr1:44475302-89585894)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p32.1-31.3(chr1:60641326-65216639)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000001.10:g.(?_61548464)_(67861772_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p32.3-31.3(chr1:53675707-66644963)x1"
+      }
+    ]
+  },
+  "GATA4": {
+    "pathogenic_count": 155,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 8p23.3-21.2(chr8:158049-26626500)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 8p23.1-22(chr8:11266131-16489491)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001308093.3(GATA4):c.920G>C (p.Arg307Thr)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 8p23.2-21.2(chr8:6194677-25015979)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001308093.3(GATA4):c.822C>A (p.Asn274Lys)"
+      }
+    ]
+  },
+  "GBX2": {
+    "pathogenic_count": 63,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q33.3-37.3(chr2:206965837-242783384)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q37.2-37.3(chr2:236127397-242783384)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q37.2-37.3(chr2:236478472-243048854)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q35-37.3(chr2:216815496-242782258)x3"
+      }
+    ]
+  },
+  "GDNF": {
+    "pathogenic_count": 20,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh38/hg38 5p13.3-12(chr5:29299893-45899898)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p13.3-11(chr5:29348753-46389339)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p13.2-11(chr5:36053583-46389339)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p14.1-11(chr5:26382110-46389339)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p13.2-11(chr5:34984696-46405042)x3"
+      }
+    ]
+  },
+  "GFRA1": {
+    "pathogenic_count": 31,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005264.8(GFRA1):c.792dup (p.Thr265fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10q23.33-26.3(chr10:95078198-135427143)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10q25.1-26.13(chr10:107129993-123817654)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10q25.1-26.3(chr10:111447991-133435388)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10q25.1-26.3(chr10:111378692-135427143)x3"
+      }
+    ]
+  },
+  "HAND1": {
+    "pathogenic_count": 12,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5q33.1-35.2(chr5:150535183-172906793)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5q32-35.3(chr5:149010383-180719789)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000005.9:g.(?_86400000)_(154000000_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p15.1-q35.2(chr5:17628741-176575720)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5p15.33-q35.3(chr5:113577-180719789)"
+      }
+    ]
+  },
+  "HAND2": {
+    "pathogenic_count": 64,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q32.1-35.2(chr4:161355371-190957473)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q34.1(chr4:174151474-174626932)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q34.1-34.3(chr4:172781617-182798652)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q27-35.2(chr4:123399154-190957473)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q32.1-35.2(chr4:161589441-190957473)x1"
+      }
+    ]
+  },
+  "IRF6": {
+    "pathogenic_count": 136,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006147.4(IRF6):c.119G>A (p.Trp40Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1q21.1-44(chr1:143932350-249224684)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006147.4(IRF6):c.797T>C (p.Phe266Ser)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006147.4(IRF6):c.202C>T (p.Gln68Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006147.4(IRF6):c.947T>C (p.Leu316Pro)"
+      }
+    ]
+  },
+  "ITGB1": {
+    "pathogenic_count": 10,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p12.1-11.22(chr10:28970254-33231328)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p14-q26.3(chr10:11138692-135427143)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p13-q26.3(chr10:12829206-135427143)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p15.1-11.21(chr10:6273934-34732521)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p11.23-11.22(chr10:30624523-33688350)x1"
+      }
+    ]
+  },
+  "JAG1": {
+    "pathogenic_count": 486,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000214.3(JAG1):c.2372+2dup"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000214.3(JAG1):c.50_51insAGGA (p.Leu18fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000214.3(JAG1):c.2016_2019del (p.Ser672fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000214.3(JAG1):c.2791dup (p.Thr931fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000214.3(JAG1):c.2345-2A>C"
+      }
+    ]
+  },
+  "KIT": {
+    "pathogenic_count": 133,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000222.3(KIT):c.2062del (p.Ser688fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000222.3(KIT):c.2424T>G (p.Ile808Met)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000222.3(KIT):c.1880-1G>A"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000222.3(KIT):c.1647G>C (p.Gln549His)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000222.3(KIT):c.745_746del (p.Glu249fs)"
+      }
+    ]
+  },
+  "LEF1": {
+    "pathogenic_count": 17,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_016269.5(LEF1):c.469dup (p.Leu157fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_016269.5(LEF1):c.856del (p.His286fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_016269.5(LEF1):c.513del (p.Ser172fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q24-35.2(chr4:101203509-190957473)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p12-q35.2(chr4:45455621-191003541)x3"
+      }
+    ]
+  },
+  "MEF2C": {
+    "pathogenic_count": 169,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5q14.3(chr5:87547243-90371586)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_002397.5(MEF2C):c.516_519dup (p.His174fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_002397.5(MEF2C):c.603_604del (p.Gly202fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_002397.5(MEF2C):c.59C>A (p.Thr20Lys)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_002397.5(MEF2C):c.835-1_835delinsAT"
+      }
+    ]
+  },
+  "MITF": {
+    "pathogenic_count": 150,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001354604.2(MITF):c.1079A>C (p.Tyr360Ser)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 3p14.1-12.2(chr3:67967190-80941234)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001354604.2(MITF):c.1142_1143del (p.Leu381fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001354604.2(MITF):c.980T>C (p.Ile327Thr)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001354604.2(MITF):c.1284_1291del (p.Glu429fs)"
+      }
+    ]
+  },
+  "MMP2": {
+    "pathogenic_count": 51,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16q12.2-22.1(chr16:55407065-67180113)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004530.6(MMP2):c.1161G>A (p.Trp387Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004530.6(MMP2):c.1585G>T (p.Glu529Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004530.6(MMP2):c.348del (p.Lys116fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16q11.2-24.3(chr16:46432879-90294753)x3"
+      }
+    ]
+  },
+  "MMP9": {
+    "pathogenic_count": 14,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000020.10:g.(?_44577592)_(45362473_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000020.10:g.(?_42223339)_(45362473_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000020.10:g.(?_44519965)_(44751017_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004994.3(MMP9):c.151C>T (p.Arg51Cys)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004994.3(MMP9):c.929del (p.Gly310fs)"
+      }
+    ]
+  },
+  "MSX1": {
+    "pathogenic_count": 130,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-16.1(chr4:1752407-7489009)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-15.2(chr4:68346-23792768)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-16.1(chr4:1675467-10694991)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_002448.3(MSX1):c.250_252delinsC (p.Glu84fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p16.3-16.2(chr4:68346-5762161)x1"
+      }
+    ]
+  },
+  "MSX2": {
+    "pathogenic_count": 32,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_002449.5(MSX2):c.473dup (p.Arg159fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_002449.5(MSX2):c.380-2A>T"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 5q35.1-35.2(chr5:171836503-176517734)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_002449.5(MSX2):c.441_442dup (p.Pro148fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_002449.5(MSX2):c.1A>G (p.Met1Val)"
+      }
+    ]
+  },
+  "MYCN": {
+    "pathogenic_count": 103,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005378.6(MYCN):c.558C>A (p.Cys186Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005378.6(MYCN):c.167_203del (p.Leu56fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005378.6(MYCN):c.1189C>T (p.Leu397Phe)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2p25.3-23.1(chr2:12771-30565600)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005378.6(MYCN):c.985C>T (p.Gln329Ter)"
+      }
+    ]
+  },
+  "NF1": {
+    "pathogenic_count": 5469,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001042492.3(NF1):c.2439_2452dup (p.Ser818fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001042492.3(NF1):c.311T>A (p.Leu104Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001042492.3(NF1):c.3433_3434del (p.Thr1145fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001042492.3(NF1):c.400del (p.Leu134fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001042492.3(NF1):c.7339G>T (p.Glu2447Ter)"
+      }
+    ]
+  },
+  "NGFR": {
+    "pathogenic_count": 12,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 17q12-22(chr17:41196270-41277589)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 17q21.32-22(chr17:46481089-51396368)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 17p13.3-q25.3(chr17:526-81041938)x3"
+      }
+    ]
+  },
+  "NKX2-5": {
+    "pathogenic_count": 141,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004387.4(NKX2-5):c.748del (p.Tyr250fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004387.4(NKX2-5):c.421_422insG (p.Pro141fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004387.4(NKX2-5):c.559C>T (p.Gln187Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004387.4(NKX2-5):c.481_482del (p.Arg161fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004387.4(NKX2-5):c.552C>G (p.Ile184Met)"
+      }
+    ]
+  },
+  "NOTCH1": {
+    "pathogenic_count": 242,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_017617.5(NOTCH1):c.1987G>T (p.Glu663Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 9q34.3(chr9:139252991-139435356)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_017617.5(NOTCH1):c.1896del (p.Thr633fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_017617.5(NOTCH1):c.4584C>A (p.Cys1528Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_017617.5(NOTCH1):c.4972_4976delinsCCTCGC (p.Glu1658fs)"
+      }
+    ]
+  },
+  "NOTCH2": {
+    "pathogenic_count": 105,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_024408.4(NOTCH2):c.1176del (p.Asn393fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_024408.4(NOTCH2):c.1235G>T (p.Cys412Phe)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_024408.4(NOTCH2):c.5098del (p.Ala1700fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p13.1-11.2(chr1:116675753-121116815)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_024408.4(NOTCH2):c.3338-2A>G"
+      }
+    ]
+  },
+  "NR2F1": {
+    "pathogenic_count": 144,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh38/hg38 5q14.3-21.2(chr5:90079852-103658165)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005654.6(NR2F1):c.835_844dup (p.Leu282fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005654.6(NR2F1):c.667del (p.Ala223fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005654.6(NR2F1):c.115G>T (p.Glu39Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005654.6(NR2F1):c.293A>G (p.Tyr98Cys)"
+      }
+    ]
+  },
+  "NR2F2": {
+    "pathogenic_count": 86,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q26.1-26.3(chr15:90569376-102369410)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q24.1-26.3(chr15:73506509-102429112)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_021005.4(NR2F2):c.394C>T (p.Gln132Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 15q26.1-26.3(chr15:93645548-102429112)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_021005.4(NR2F2):c.486dup (p.Gln163fs)"
+      }
+    ]
+  },
+  "NRP1": {
+    "pathogenic_count": 9,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p14-q26.3(chr10:11138692-135427143)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p13-q26.3(chr10:12829206-135427143)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p15.1-11.21(chr10:6273934-34732521)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p11.23-11.22(chr10:30624523-33688350)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 10p15.3-q11.23(chr10:100026-50961640)x3"
+      }
+    ]
+  },
+  "PAX3": {
+    "pathogenic_count": 227,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_181458.4(PAX3):c.987_988del (p.His329fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_181458.4(PAX3):c.238del (p.His80fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q33.3-37.3(chr2:206965837-242783384)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_181458.4(PAX3):c.587-10416A>G"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_181458.4(PAX3):c.124G>A (p.Gly42Ser)"
+      }
+    ]
+  },
+  "PAX6": {
+    "pathogenic_count": 480,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001368894.2(PAX6):c.-128-2A>G"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001368894.2(PAX6):c.63_70del (p.Pro22fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001368894.2(PAX6):c.806A>G (p.Gln269Arg)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 11p13(chr11:31822239-31823460)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001368894.2(PAX6):c.141G>A (p.Gln47=)"
+      }
+    ]
+  },
+  "PAX7": {
+    "pathogenic_count": 20,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001135254.2(PAX7):c.742G>T (p.Glu248Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p36.32-36.12(chr1:4436802-22782007)x2"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p36.21-36.12(chr1:16194137-20561434)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1p36.13-36.12(chr1:17291707-23016395)x4"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh38/hg38 1p36.33-35.1(chr1:99125-34026935)x3"
+      }
+    ]
+  },
+  "PHOX2B": {
+    "pathogenic_count": 99,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003924.4(PHOX2B):c.753_791dup (p.Ala266_Gly267insAlaAlaAlaAlaAlaAlaAlaGlyGlyLeuAlaAlaAla)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003924.4(PHOX2B):c.767_768insGGCGGCGGCCGCGGC (p.Ala260_Gly261insAlaAlaAlaAlaAla)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003924.4(PHOX2B):c.741CGCGGCAGCGGCGGCGGCGGC[3] (p.Ala260_Gly261insAlaAlaAlaAlaAlaAlaAlaAlaAlaAlaAlaAlaAlaAla)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003924.4(PHOX2B):c.390_398delinsTCTTCAG (p.Glu130fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003924.4(PHOX2B):c.747del (p.Ala250fs)"
+      }
+    ]
+  },
+  "PLXNA2": {
+    "pathogenic_count": 18,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1q21.1-44(chr1:143932350-249224684)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_025179.4(PLXNA2):c.3640-1G>A"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000001.10:g.(?_190829412)_(216061974_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1q25.3-32.3(chr1:181453460-213107248)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1q31.3-44(chr1:197867914-249224684)x3"
+      }
+    ]
+  },
+  "PMEL": {
+    "pathogenic_count": 6,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 12q13.2-14.1(chr12:55552371-62126304)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 12p13.33-q24.33(chr12:173787-133777902)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 12p13.33-q24.33(chr12:173787-133777902)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 12p13.33-q24.33(chr12:1-133851895)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh38/hg38 12q13.13-13.3(chr12:53420606-56202942)x3"
+      }
+    ]
+  },
+  "RAC1": {
+    "pathogenic_count": 60,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7p22.2-21.3(chr7:3876162-11345148)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7p22.3-14.3(chr7:158725-29918785)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006908.5(RAC1):c.348A>C (p.Lys116Asn)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006908.5(RAC1):c.171T>G (p.Asp57Glu)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006908.5(RAC1):c.178G>A (p.Gly60Arg)"
+      }
+    ]
+  },
+  "RARA": {
+    "pathogenic_count": 8,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 17q12-21.2(chr17:33220181-39572233)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 17q12-22(chr17:41196270-41277589)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 17p11.2-q21.2(chr17:21690653-38772647)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 17p13.3-q25.3(chr17:526-81041938)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 17p13.3-q25.3(chr17:526-81041938)"
+      }
+    ]
+  },
+  "RET": {
+    "pathogenic_count": 184,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_020975.6(RET):c.754G>T (p.Glu252Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_020975.6(RET):c.921_922del (p.Glu309fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_020975.6(RET):c.1A>G (p.Met1Val)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_020975.6(RET):c.840_843dup (p.Val282fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_020975.6(RET):c.1889G>C (p.Cys630Ser)"
+      }
+    ]
+  },
+  "RHOA": {
+    "pathogenic_count": 16,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 3p26.3-14.3(chr3:2263690-55016039)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 3p21.31-21.2(chr3:48855503-51285217)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000003.11:g.(?_48895920)_(49570632_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001664.4(RHOA):c.50G>T (p.Gly17Val)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001664.4(RHOA):c.208A>G (p.Arg70Gly)"
+      }
+    ]
+  },
+  "RUNX2": {
+    "pathogenic_count": 182,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001024630.4(RUNX2):c.859_859+1insACTCT"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001024630.4(RUNX2):c.379C>T (p.Pro127Ser)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001024630.4(RUNX2):c.1094C>G (p.Ser365Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001024630.4(RUNX2):c.261_277delinsTGCGGCGGCGGCGGCGGC (p.Val90fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001024630.4(RUNX2):c.1041del (p.Asp348fs)"
+      }
+    ]
+  },
+  "SEMA3A": {
+    "pathogenic_count": 24,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q11.23-21.3(chr7:74666254-97791584)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006080.3(SEMA3A):c.1591C>T (p.Arg531Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006080.3(SEMA3A):c.607dup (p.Arg203fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006080.3(SEMA3A):c.333+2T>C"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000007.13:g.(?_83606428)_(83614813_?)del"
+      }
+    ]
+  },
+  "SEMA3C": {
+    "pathogenic_count": 16,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q11.23-21.3(chr7:74666254-97791584)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q21.11-21.3(chr7:77821356-93340137)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q11.23-21.11(chr7:77310644-84461089)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000007.13:g.(?_80276057)_(83739925_?)del"
+      }
+    ]
+  },
+  "SHH": {
+    "pathogenic_count": 214,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q36.2-36.3(chr7:153906860-158923491)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7q33-36.3(chr7:137521595-159119707)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000193.4(SHH):c.935dup (p.Gln313fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000193.4(SHH):c.667C>G (p.Arg223Gly)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000193.4(SHH):c.1035_1037del (p.Tyr345_Ala346delinsTer)"
+      }
+    ]
+  },
+  "SMAD1": {
+    "pathogenic_count": 25,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q27-35.2(chr4:123399154-190957473)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q24-35.2(chr4:101203509-190957473)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4p12-q35.2(chr4:45455621-191003541)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q26-32.3(chr4:117518683-168174703)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 4q28.3-32.3(chr4:131303317-168722402)x3"
+      }
+    ]
+  },
+  "SNAI1": {
+    "pathogenic_count": 9,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20q13.13-13.2(chr20:47627844-52045480)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20p13-q13.33(chr20:61569-62915555)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20p13-q13.33(chr20:61569-62915555)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20q13.13-13.2(chr20:47726521-50427649)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 20q13.13-13.2(chr20:47682662-49884981)x1"
+      }
+    ]
+  },
+  "SNAI2": {
+    "pathogenic_count": 23,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 8p11.23-q11.23(chr8:37551624-52934472)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 8p21.2-q21.3(chr8:27024288-89410121)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 8p23.3-q24.3(chr8:158048-146295771)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 8p11.23-q11.21(chr8:36763176-50929707)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 8p23.3-q24.3(chr8:158048-146295771)"
+      }
+    ]
+  },
+  "SOX10": {
+    "pathogenic_count": 254,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006941.4(SOX10):c.698-2A>G"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006941.4(SOX10):c.475C>T (p.Arg159Trp)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006941.4(SOX10):c.405C>G (p.Ser135Arg)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006941.4(SOX10):c.78del (p.Ser27fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006941.4(SOX10):c.1100dup (p.His368fs)"
+      }
+    ]
+  },
+  "SOX2": {
+    "pathogenic_count": 144,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 3q22.1-29(chr3:132561657-197851986)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003106.4(SOX2):c.335C>T (p.Pro112Leu)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003106.4(SOX2):c.583C>T (p.Gln195Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003106.4(SOX2):c.90_96dup (p.Asn33fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003106.4(SOX2):c.128G>T (p.Arg43Leu)"
+      }
+    ]
+  },
+  "SOX5": {
+    "pathogenic_count": 150,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006940.6(SOX5):c.1004dup (p.Leu336fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006940.6(SOX5):c.270+1del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_006940.6(SOX5):c.1489del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 12p13.33-11.1(chr12:173787-34835837)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 12p12.1(chr12:23801781-23937133)x1"
+      }
+    ]
+  },
+  "SOX8": {
+    "pathogenic_count": 47,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16p13.3(chr16:513767-5555136)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16p13.3-13.13(chr16:85881-12268399)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000016.9:g.(?_256302)_(1557737_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16p13.3(chr16:85881-1657611)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 16p13.3(chr16:811896-2130379)x1"
+      }
+    ]
+  },
+  "SOX9": {
+    "pathogenic_count": 154,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000346.4(SOX9):c.432-2A>G"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000346.4(SOX9):c.1121del (p.Pro374fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000346.4(SOX9):c.323C>T (p.Pro108Leu)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000346.4(SOX9):c.1079dup (p.Gln361fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000346.4(SOX9):c.600del (p.Asn201fs)"
+      }
+    ]
+  },
+  "TBX1": {
+    "pathogenic_count": 437,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001379200.1(TBX1):c.935+1G>A"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 22q11.21(chr22:18916828-21465662)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001379200.1(TBX1):c.712-1G>T"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000022.11:g.(?_18940000)_(20690000_?)dup"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 22q11.21(chr22:18648855-21800471)x3"
+      }
+    ]
+  },
+  "TBX5": {
+    "pathogenic_count": 219,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 12q23.1-24.33(chr12:99532287-133777902)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_181486.4(TBX5):c.784del (p.Thr262fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 12q24.21(chr12:114686840-115741264)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_181486.4(TBX5):c.100del (p.Ala34fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_181486.4(TBX5):c.130del (p.Ala44fs)"
+      }
+    ]
+  },
+  "TCOF1": {
+    "pathogenic_count": 234,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000005.10:g.150384687_150384688ins[PX401960:g.1_3396]"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001371623.1(TCOF1):c.1219_1235del (p.Glu407fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001371623.1(TCOF1):c.3108_3111del (p.Ser1036fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001371623.1(TCOF1):c.1325del (p.Pro442fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001371623.1(TCOF1):c.640-2del"
+      }
+    ]
+  },
+  "TFAP2A": {
+    "pathogenic_count": 83,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001372066.1(TFAP2A):c.486+1G>A"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001372066.1(TFAP2A):c.781A>G (p.Lys261Glu)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001372066.1(TFAP2A):c.69_85dup (p.Arg29fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_001372066.1(TFAP2A):c.204C>A (p.Tyr68Ter)"
+      }
+    ]
+  },
+  "TFAP2B": {
+    "pathogenic_count": 37,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003221.4(TFAP2B):c.767G>A (p.Arg256Gln)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003221.4(TFAP2B):c.620C>A (p.Ser207Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003221.4(TFAP2B):c.328C>T (p.Gln110Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003221.4(TFAP2B):c.219dup (p.Tyr74fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003221.4(TFAP2B):c.899G>A (p.Arg300His)"
+      }
+    ]
+  },
+  "TGFBR1": {
+    "pathogenic_count": 147,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "M253I"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "T274S"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004612.4(TGFBR1):c.1058dup (p.Leu354fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004612.4(TGFBR1):c.722C>G (p.Ser241Trp)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_004612.4(TGFBR1):c.91del (p.Ala31fs)"
+      }
+    ]
+  },
+  "TGFBR2": {
+    "pathogenic_count": 143,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 3p26.3-14.3(chr3:2263690-55016039)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003242.6(TGFBR2):c.1336G>T (p.Asp446Tyr)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003242.6(TGFBR2):c.1291G>A (p.Glu431Lys)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003242.6(TGFBR2):c.1061_1063delinsCCC (p.Leu354_Ala355delinsProPro)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003242.6(TGFBR2):c.1337A>G (p.Asp446Gly)"
+      }
+    ]
+  },
+  "TWIST1": {
+    "pathogenic_count": 136,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7p22.3-14.3(chr7:158725-29918785)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7p21.1-15.3(chr7:18093509-25363633)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7p21.3-15.3(chr7:12229502-21665553)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 7p21.2-15.2(chr7:16417575-27541028)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000474.4(TWIST1):c.90_111dup (p.Lys38fs)"
+      }
+    ]
+  },
+  "TWIST2": {
+    "pathogenic_count": 91,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q33.3-37.3(chr2:206965837-242783384)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q37.2-37.3(chr2:236127397-242783384)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "Single allele"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000002.11:g.(?_237481970)_(242801596_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 2q37.2-37.3(chr2:236478472-243048854)x1"
+      }
+    ]
+  },
+  "TYR": {
+    "pathogenic_count": 322,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000372.5:c.[575C>A;1205G>A]"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000372.5(TYR):c.819+1del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000372.5(TYR):c.605A>T (p.His202Leu)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000372.5(TYR):c.265del (p.Cys89fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000372.5(TYR):c.1169A>G (p.His390Arg)"
+      }
+    ]
+  },
+  "TYRP1": {
+    "pathogenic_count": 204,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 9p24.3-22.2(chr9:2079051-17236505)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000550.3(TYRP1):c.1525G>T (p.Glu509Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000550.3(TYRP1):c.1262-1G>C"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 9p24.3-q21.11(chr9:203862-69977404)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_000550.3(TYRP1):c.708+2T>A"
+      }
+    ]
+  },
+  "WNT1": {
+    "pathogenic_count": 53,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005430.4(WNT1):c.502G>A (p.Gly168Arg)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005430.4(WNT1):c.69dup (p.Ala24fs)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005430.4(WNT1):c.990C>A (p.Cys330Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005430.4(WNT1):c.105-1G>A"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_005430.4(WNT1):c.1035C>A (p.Cys345Ter)"
+      }
+    ]
+  },
+  "WNT3A": {
+    "pathogenic_count": 35,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1q21.1-44(chr1:143932350-249224684)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NC_000001.10:g.(?_228194830)_(228566496_?)del"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1q42.13(chr1:228215364-229747702)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1q41-44(chr1:223972939-249224684)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 1q42.13-43(chr1:227992928-236659905)x3"
+      }
+    ]
+  },
+  "ZEB2": {
+    "pathogenic_count": 425,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_014795.4(ZEB2):c.2567C>G (p.Ser856Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_014795.4(ZEB2):c.3086G>A (p.Cys1029Tyr)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_014795.4(ZEB2):c.59C>G (p.Pro20Arg)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_014795.4(ZEB2):c.3082C>T (p.Gln1028Ter)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_014795.4(ZEB2):c.1196del (p.Asp399fs)"
+      }
+    ]
+  },
+  "ZIC1": {
+    "pathogenic_count": 31,
+    "variants": [
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 3q22.1-29(chr3:132561657-197851986)x3"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 3q22.1-25.1(chr3:131235568-150065289)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003412.4(ZIC1):c.1042G>A (p.Asp348Asn)"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "GRCh37/hg19 3q24-25.1(chr3:146504503-151662391)x1"
+      },
+      {
+        "clinical_significance": "",
+        "condition": "not specified",
+        "name": "NM_003412.4(ZIC1):c.1101C>A (p.Cys367Ter)"
+      }
+    ]
+  }
+}

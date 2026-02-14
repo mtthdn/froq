@@ -1,0 +1,764 @@
+{
+  "_meta": {
+    "description": "Pre-researched OMIM gene entries and phenotype associations for 95 neural crest genes.",
+    "source": "https://omim.org/",
+    "note": "Bundled subset — OMIM API requires registration. Data hand-curated from OMIM website.",
+    "date": "2026-02-14"
+  },
+  "genes": {
+    "PAX3": {
+      "mim_number": "606597",
+      "title": "Paired box gene 3",
+      "syndromes": [
+        {"name": "Waardenburg syndrome, type 1", "mim": "193500"},
+        {"name": "Waardenburg syndrome, type 3", "mim": "148820"}
+      ],
+      "inheritance": "AD"
+    },
+    "PAX7": {
+      "mim_number": "167410",
+      "title": "Paired box gene 7",
+      "syndromes": [
+        {"name": "Rhabdomyosarcoma 2, alveolar", "mim": "268220"}
+      ],
+      "inheritance": "AD"
+    },
+    "ZIC1": {
+      "mim_number": "600470",
+      "title": "Zinc finger protein of the cerebellum 1",
+      "syndromes": [
+        {"name": "Craniosynostosis 6", "mim": "616602"}
+      ],
+      "inheritance": "AD"
+    },
+    "MSX1": {
+      "mim_number": "142983",
+      "title": "Muscle segment homeobox 1",
+      "syndromes": [
+        {"name": "Tooth agenesis, selective, 1", "mim": "106600"},
+        {"name": "Orofacial cleft 5", "mim": "608874"}
+      ],
+      "inheritance": "AD"
+    },
+    "MSX2": {
+      "mim_number": "123101",
+      "title": "Muscle segment homeobox 2",
+      "syndromes": [
+        {"name": "Craniosynostosis, type 2", "mim": "604757"},
+        {"name": "Parietal foramina 1", "mim": "168500"}
+      ],
+      "inheritance": "AD"
+    },
+    "SOX9": {
+      "mim_number": "608160",
+      "title": "SRY-box transcription factor 9",
+      "syndromes": [
+        {"name": "Campomelic dysplasia", "mim": "114290"}
+      ],
+      "inheritance": "AD"
+    },
+    "SOX10": {
+      "mim_number": "602229",
+      "title": "SRY-box transcription factor 10",
+      "syndromes": [
+        {"name": "Waardenburg syndrome, type 4C", "mim": "613266"},
+        {"name": "PCWH syndrome", "mim": "609136"}
+      ],
+      "inheritance": "AD"
+    },
+    "FOXD3": {
+      "mim_number": "611539",
+      "title": "Forkhead box D3",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "TFAP2A": {
+      "mim_number": "107580",
+      "title": "Transcription factor AP-2 alpha",
+      "syndromes": [
+        {"name": "Branchiooculofacial syndrome", "mim": "113620"}
+      ],
+      "inheritance": "AD"
+    },
+    "SNAI1": {
+      "mim_number": "604238",
+      "title": "Snail family transcriptional repressor 1",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "SNAI2": {
+      "mim_number": "602150",
+      "title": "Snail family transcriptional repressor 2",
+      "syndromes": [
+        {"name": "Piebaldism", "mim": "172800"},
+        {"name": "Waardenburg syndrome, type 2D", "mim": "608890"}
+      ],
+      "inheritance": "AR"
+    },
+    "TWIST1": {
+      "mim_number": "601622",
+      "title": "Twist family bHLH transcription factor 1",
+      "syndromes": [
+        {"name": "Saethre-Chotzen syndrome", "mim": "101400"}
+      ],
+      "inheritance": "AD"
+    },
+    "IRF6": {
+      "mim_number": "607199",
+      "title": "Interferon regulatory factor 6",
+      "syndromes": [
+        {"name": "Van der Woude syndrome", "mim": "119300"},
+        {"name": "Popliteal pterygium syndrome", "mim": "119500"}
+      ],
+      "inheritance": "AD"
+    },
+    "TCOF1": {
+      "mim_number": "606847",
+      "title": "Treacle ribosome biogenesis factor 1",
+      "syndromes": [
+        {"name": "Treacher Collins syndrome 1", "mim": "154500"}
+      ],
+      "inheritance": "AD"
+    },
+    "CHD7": {
+      "mim_number": "608892",
+      "title": "Chromodomain helicase DNA binding protein 7",
+      "syndromes": [
+        {"name": "CHARGE syndrome", "mim": "214800"}
+      ],
+      "inheritance": "AD"
+    },
+    "FGFR2": {
+      "mim_number": "176943",
+      "title": "Fibroblast growth factor receptor 2",
+      "syndromes": [
+        {"name": "Crouzon syndrome", "mim": "123500"},
+        {"name": "Apert syndrome", "mim": "101200"},
+        {"name": "Pfeiffer syndrome", "mim": "101600"}
+      ],
+      "inheritance": "AD"
+    },
+    "TBX1": {
+      "mim_number": "602054",
+      "title": "T-box transcription factor 1",
+      "syndromes": [
+        {"name": "DiGeorge syndrome", "mim": "188400"},
+        {"name": "Velocardiofacial syndrome", "mim": "192430"}
+      ],
+      "inheritance": "AD"
+    },
+    "EVC": {
+      "mim_number": "604831",
+      "title": "EvC ciliary complex subunit 1",
+      "syndromes": [
+        {"name": "Ellis-van Creveld syndrome", "mim": "225500"}
+      ],
+      "inheritance": "AR"
+    },
+    "RUNX2": {
+      "mim_number": "600211",
+      "title": "RUNX family transcription factor 2",
+      "syndromes": [
+        {"name": "Cleidocranial dysplasia", "mim": "119600"}
+      ],
+      "inheritance": "AD"
+    },
+    "SHH": {
+      "mim_number": "600725",
+      "title": "Sonic hedgehog signaling molecule",
+      "syndromes": [
+        {"name": "Holoprosencephaly 3", "mim": "142945"}
+      ],
+      "inheritance": "AD"
+    },
+    "ADAM10": {
+      "mim_number": "602192",
+      "title": "A disintegrin and metalloproteinase domain 10",
+      "syndromes": [
+        {"name": "Reticulate acropigmentation of Kitamura", "mim": "615537"}
+      ],
+      "inheritance": "AD"
+    },
+    "ALDH1A2": {
+      "mim_number": "603687",
+      "title": "Aldehyde dehydrogenase 1 family, member A2",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "AXIN2": {
+      "mim_number": "604025",
+      "title": "Axis inhibitor 2",
+      "syndromes": [
+        {"name": "Oligodontia-colorectal cancer syndrome", "mim": "608615"}
+      ],
+      "inheritance": "AD"
+    },
+    "BMP2": {
+      "mim_number": "112261",
+      "title": "Bone morphogenetic protein 2",
+      "syndromes": [
+        {"name": "Short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies 1", "mim": "617877"}
+      ],
+      "inheritance": "AD"
+    },
+    "BMP4": {
+      "mim_number": "112262",
+      "title": "Bone morphogenetic protein 4",
+      "syndromes": [
+        {"name": "Microphthalmia, syndromic 6", "mim": "607932"}
+      ],
+      "inheritance": "AD"
+    },
+    "BMP7": {
+      "mim_number": "112267",
+      "title": "Bone morphogenetic protein 7",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "CDH2": {
+      "mim_number": "114020",
+      "title": "Cadherin 2",
+      "syndromes": [
+        {"name": "Arrhythmogenic right ventricular dysplasia 14", "mim": "618920"},
+        {"name": "Agenesis of corpus callosum, cardiac, ocular, and genital syndrome", "mim": "618929"}
+      ],
+      "inheritance": "AD"
+    },
+    "CDH6": {
+      "mim_number": "603007",
+      "title": "Cadherin 6",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "CDH11": {
+      "mim_number": "600023",
+      "title": "Cadherin 11",
+      "syndromes": [
+        {"name": "Elsahy-Waters syndrome", "mim": "211380"}
+      ],
+      "inheritance": "AR"
+    },
+    "CTNNB1": {
+      "mim_number": "116806",
+      "title": "Catenin, beta-1",
+      "syndromes": [
+        {"name": "Neurodevelopmental disorder with spastic diplegia and visual defects", "mim": "615075"},
+        {"name": "Exudative vitreoretinopathy 7", "mim": "617572"}
+      ],
+      "inheritance": "AD"
+    },
+    "CXCR4": {
+      "mim_number": "162643",
+      "title": "Chemokine, CXC motif, receptor 4",
+      "syndromes": [
+        {"name": "WHIM syndrome 1", "mim": "193670"}
+      ],
+      "inheritance": "AD"
+    },
+    "DCT": {
+      "mim_number": "191275",
+      "title": "Dopachrome tautomerase",
+      "syndromes": [
+        {"name": "Oculocutaneous albinism, type VIII", "mim": "619165"}
+      ],
+      "inheritance": "AR"
+    },
+    "DLL1": {
+      "mim_number": "606582",
+      "title": "Delta-like canonical Notch ligand 1",
+      "syndromes": [
+        {"name": "Neurodevelopmental disorder with nonspecific brain abnormalities and with or without seizures", "mim": "618709"}
+      ],
+      "inheritance": "AD"
+    },
+    "DLX2": {
+      "mim_number": "126255",
+      "title": "Distal-less homeobox 2",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "DLX3": {
+      "mim_number": "600525",
+      "title": "Distal-less homeobox 3",
+      "syndromes": [
+        {"name": "Trichodentoosseous syndrome", "mim": "190320"}
+      ],
+      "inheritance": "AD"
+    },
+    "DLX5": {
+      "mim_number": "600028",
+      "title": "Distal-less homeobox 5",
+      "syndromes": [
+        {"name": "Split-hand/foot malformation 1 with sensorineural hearing loss", "mim": "220600"}
+      ],
+      "inheritance": "AR"
+    },
+    "DLX6": {
+      "mim_number": "600030",
+      "title": "Distal-less homeobox 6",
+      "syndromes": [
+        {"name": "Split-hand/foot malformation 1", "mim": "183600"}
+      ],
+      "inheritance": "AD"
+    },
+    "ECE1": {
+      "mim_number": "600423",
+      "title": "Endothelin-converting enzyme 1",
+      "syndromes": [
+        {"name": "Hirschsprung disease, cardiac defects, and autonomic dysfunction", "mim": "613870"}
+      ],
+      "inheritance": "AD"
+    },
+    "EDN1": {
+      "mim_number": "131240",
+      "title": "Endothelin 1",
+      "syndromes": [
+        {"name": "Auriculocondylar syndrome 3", "mim": "615706"}
+      ],
+      "inheritance": "AR"
+    },
+    "EDN3": {
+      "mim_number": "131242",
+      "title": "Endothelin 3",
+      "syndromes": [
+        {"name": "Waardenburg syndrome, type 4B", "mim": "613265"},
+        {"name": "Hirschsprung disease, susceptibility to, 4", "mim": "613712"}
+      ],
+      "inheritance": "AD/AR"
+    },
+    "EDNRA": {
+      "mim_number": "131243",
+      "title": "Endothelin receptor, type A",
+      "syndromes": [
+        {"name": "Mandibulofacial dysostosis with alopecia", "mim": "616367"}
+      ],
+      "inheritance": "AD"
+    },
+    "EDNRB": {
+      "mim_number": "131244",
+      "title": "Endothelin receptor, type B",
+      "syndromes": [
+        {"name": "Waardenburg syndrome, type 4A", "mim": "277580"},
+        {"name": "Hirschsprung disease, susceptibility to, 2", "mim": "600155"}
+      ],
+      "inheritance": "AD/AR"
+    },
+    "ERBB3": {
+      "mim_number": "190151",
+      "title": "Erb-b2 receptor tyrosine kinase 3",
+      "syndromes": [
+        {"name": "Lethal congenital contracture syndrome 2", "mim": "607598"}
+      ],
+      "inheritance": "AR"
+    },
+    "ETS1": {
+      "mim_number": "164720",
+      "title": "ETS protooncogene 1, transcription factor",
+      "syndromes": [
+        {"name": "Jacobsen syndrome", "mim": "147791"}
+      ],
+      "inheritance": "AD"
+    },
+    "FGF8": {
+      "mim_number": "600483",
+      "title": "Fibroblast growth factor 8",
+      "syndromes": [
+        {"name": "Hypogonadotropic hypogonadism 6 with or without anosmia", "mim": "612702"}
+      ],
+      "inheritance": "AD"
+    },
+    "FGFR1": {
+      "mim_number": "136350",
+      "title": "Fibroblast growth factor receptor 1",
+      "syndromes": [
+        {"name": "Pfeiffer syndrome", "mim": "101600"},
+        {"name": "Hypogonadotropic hypogonadism 2 with or without anosmia", "mim": "147950"},
+        {"name": "Hartsfield syndrome", "mim": "615465"},
+        {"name": "Osteoglophonic dysplasia", "mim": "166250"}
+      ],
+      "inheritance": "AD"
+    },
+    "FGFR3": {
+      "mim_number": "134934",
+      "title": "Fibroblast growth factor receptor 3",
+      "syndromes": [
+        {"name": "Achondroplasia", "mim": "100800"},
+        {"name": "Thanatophoric dysplasia, type I", "mim": "187600"},
+        {"name": "Thanatophoric dysplasia, type II", "mim": "187601"},
+        {"name": "Muenke syndrome", "mim": "602849"},
+        {"name": "Hypochondroplasia", "mim": "146000"}
+      ],
+      "inheritance": "AD"
+    },
+    "FN1": {
+      "mim_number": "135600",
+      "title": "Fibronectin 1",
+      "syndromes": [
+        {"name": "Glomerulopathy with fibronectin deposits 2", "mim": "601894"},
+        {"name": "Spondylometaphyseal dysplasia, corner fracture type", "mim": "184255"}
+      ],
+      "inheritance": "AD"
+    },
+    "GATA4": {
+      "mim_number": "600576",
+      "title": "GATA-binding protein 4",
+      "syndromes": [
+        {"name": "Atrial septal defect 2", "mim": "607941"},
+        {"name": "Ventricular septal defect 1", "mim": "614429"},
+        {"name": "Atrioventricular septal defect 4", "mim": "614430"}
+      ],
+      "inheritance": "AD"
+    },
+    "GBX2": {
+      "mim_number": "601135",
+      "title": "Gastrulation brain homeobox 2",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "GDNF": {
+      "mim_number": "600837",
+      "title": "Glial cell line-derived neurotrophic factor",
+      "syndromes": [
+        {"name": "Hirschsprung disease, susceptibility to, 3", "mim": "613711"}
+      ],
+      "inheritance": "AD"
+    },
+    "GFRA1": {
+      "mim_number": "601496",
+      "title": "GDNF family receptor alpha-1",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "HAND1": {
+      "mim_number": "602406",
+      "title": "Heart- and neural crest derivatives-expressed 1",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "HAND2": {
+      "mim_number": "602407",
+      "title": "Heart- and neural crest derivatives-expressed 2",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "ITGB1": {
+      "mim_number": "135630",
+      "title": "Integrin subunit beta-1",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "JAG1": {
+      "mim_number": "601920",
+      "title": "Jagged 1",
+      "syndromes": [
+        {"name": "Alagille syndrome 1", "mim": "118450"},
+        {"name": "Tetralogy of Fallot", "mim": "187500"}
+      ],
+      "inheritance": "AD"
+    },
+    "KIT": {
+      "mim_number": "164920",
+      "title": "KIT protooncogene, receptor tyrosine kinase",
+      "syndromes": [
+        {"name": "Piebaldism", "mim": "172800"},
+        {"name": "Gastrointestinal stromal tumor", "mim": "606764"}
+      ],
+      "inheritance": "AD"
+    },
+    "LEF1": {
+      "mim_number": "153245",
+      "title": "Lymphoid enhancer-binding factor 1",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "MEF2C": {
+      "mim_number": "600662",
+      "title": "Myocyte enhancer factor 2C",
+      "syndromes": [
+        {"name": "Neurodevelopmental disorder with hypotonia, stereotypic hand movements, and impaired language", "mim": "613443"}
+      ],
+      "inheritance": "AD"
+    },
+    "MITF": {
+      "mim_number": "156845",
+      "title": "Microphthalmia-associated transcription factor",
+      "syndromes": [
+        {"name": "Waardenburg syndrome, type 2A", "mim": "193510"},
+        {"name": "Tietz albinism-deafness syndrome", "mim": "103500"}
+      ],
+      "inheritance": "AD"
+    },
+    "MMP2": {
+      "mim_number": "120360",
+      "title": "Matrix metalloproteinase 2",
+      "syndromes": [
+        {"name": "Multicentric osteolysis, nodulosis, and arthropathy", "mim": "259600"}
+      ],
+      "inheritance": "AR"
+    },
+    "MMP9": {
+      "mim_number": "120361",
+      "title": "Matrix metalloproteinase 9",
+      "syndromes": [
+        {"name": "Metaphyseal anadysplasia 2", "mim": "613073"}
+      ],
+      "inheritance": "AR"
+    },
+    "MYCN": {
+      "mim_number": "164840",
+      "title": "MYCN protooncogene, bHLH transcription factor",
+      "syndromes": [
+        {"name": "Feingold syndrome 1", "mim": "164280"}
+      ],
+      "inheritance": "AD"
+    },
+    "NF1": {
+      "mim_number": "613113",
+      "title": "Neurofibromin 1",
+      "syndromes": [
+        {"name": "Neurofibromatosis, type I", "mim": "162200"},
+        {"name": "Neurofibromatosis-Noonan syndrome", "mim": "601321"}
+      ],
+      "inheritance": "AD"
+    },
+    "NGFR": {
+      "mim_number": "162010",
+      "title": "Nerve growth factor receptor",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "NKX2-5": {
+      "mim_number": "600584",
+      "title": "NK2 homeobox 5",
+      "syndromes": [
+        {"name": "Atrial septal defect 7 with or without atrioventricular conduction defects", "mim": "108900"},
+        {"name": "Tetralogy of Fallot", "mim": "187500"},
+        {"name": "Ventricular septal defect 3", "mim": "614432"}
+      ],
+      "inheritance": "AD"
+    },
+    "NOTCH1": {
+      "mim_number": "190198",
+      "title": "Notch receptor 1",
+      "syndromes": [
+        {"name": "Aortic valve disease 1", "mim": "109730"},
+        {"name": "Adams-Oliver syndrome 5", "mim": "616028"}
+      ],
+      "inheritance": "AD"
+    },
+    "NOTCH2": {
+      "mim_number": "600275",
+      "title": "Notch receptor 2",
+      "syndromes": [
+        {"name": "Alagille syndrome 2", "mim": "610205"},
+        {"name": "Hajdu-Cheney syndrome", "mim": "102500"}
+      ],
+      "inheritance": "AD"
+    },
+    "NR2F1": {
+      "mim_number": "132890",
+      "title": "Nuclear receptor subfamily 2, group F, member 1",
+      "syndromes": [
+        {"name": "Bosch-Boonstra-Schaaf optic atrophy syndrome", "mim": "615722"}
+      ],
+      "inheritance": "AD"
+    },
+    "NR2F2": {
+      "mim_number": "107773",
+      "title": "Nuclear receptor subfamily 2, group F, member 2",
+      "syndromes": [
+        {"name": "Congenital heart defects, multiple types, 4", "mim": "615779"}
+      ],
+      "inheritance": "AD"
+    },
+    "NRP1": {
+      "mim_number": "602069",
+      "title": "Neuropilin 1",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "PAX6": {
+      "mim_number": "607108",
+      "title": "Paired box gene 6",
+      "syndromes": [
+        {"name": "Aniridia 1", "mim": "106210"},
+        {"name": "Anterior segment dysgenesis 5", "mim": "604229"}
+      ],
+      "inheritance": "AD"
+    },
+    "PHOX2B": {
+      "mim_number": "603851",
+      "title": "Paired-like homeobox 2B",
+      "syndromes": [
+        {"name": "Central hypoventilation syndrome, congenital, 1", "mim": "209880"}
+      ],
+      "inheritance": "AD"
+    },
+    "PLXNA2": {
+      "mim_number": "601054",
+      "title": "Plexin A2",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "PMEL": {
+      "mim_number": "155550",
+      "title": "Premelanosome protein",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "RAC1": {
+      "mim_number": "602048",
+      "title": "Ras-related C3 botulinum toxin substrate 1",
+      "syndromes": [
+        {"name": "Intellectual developmental disorder, autosomal dominant 48", "mim": "617751"}
+      ],
+      "inheritance": "AD"
+    },
+    "RARA": {
+      "mim_number": "180240",
+      "title": "Retinoic acid receptor, alpha",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "RET": {
+      "mim_number": "164761",
+      "title": "RET protooncogene",
+      "syndromes": [
+        {"name": "Hirschsprung disease, susceptibility to, 1", "mim": "142623"},
+        {"name": "Multiple endocrine neoplasia, type IIA", "mim": "171400"},
+        {"name": "Multiple endocrine neoplasia, type IIB", "mim": "162300"},
+        {"name": "Medullary thyroid carcinoma", "mim": "155240"}
+      ],
+      "inheritance": "AD"
+    },
+    "RHOA": {
+      "mim_number": "165390",
+      "title": "Ras homolog gene family, member A",
+      "syndromes": [
+        {"name": "Ectodermal dysplasia with facial dysmorphism and acral, ocular, and brain anomalies", "mim": "618727"}
+      ],
+      "inheritance": "AD"
+    },
+    "SEMA3A": {
+      "mim_number": "603961",
+      "title": "Semaphorin 3A",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "SEMA3C": {
+      "mim_number": "602645",
+      "title": "Semaphorin 3C",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "SMAD1": {
+      "mim_number": "601595",
+      "title": "SMAD family member 1",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "SOX2": {
+      "mim_number": "184429",
+      "title": "SRY-box 2",
+      "syndromes": [
+        {"name": "Microphthalmia, syndromic 3", "mim": "206900"}
+      ],
+      "inheritance": "AD"
+    },
+    "SOX5": {
+      "mim_number": "604975",
+      "title": "SRY-box 5",
+      "syndromes": [
+        {"name": "Lamb-Shaffer syndrome", "mim": "616803"}
+      ],
+      "inheritance": "AD"
+    },
+    "SOX8": {
+      "mim_number": "605923",
+      "title": "SRY-box 8",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "TBX5": {
+      "mim_number": "601620",
+      "title": "T-box transcription factor 5",
+      "syndromes": [
+        {"name": "Holt-Oram syndrome", "mim": "142900"}
+      ],
+      "inheritance": "AD"
+    },
+    "TFAP2B": {
+      "mim_number": "601601",
+      "title": "Transcription factor AP-2 beta",
+      "syndromes": [
+        {"name": "Char syndrome", "mim": "169100"}
+      ],
+      "inheritance": "AD"
+    },
+    "TGFBR1": {
+      "mim_number": "190181",
+      "title": "Transforming growth factor-beta receptor, type I",
+      "syndromes": [
+        {"name": "Loeys-Dietz syndrome 1", "mim": "609192"}
+      ],
+      "inheritance": "AD"
+    },
+    "TGFBR2": {
+      "mim_number": "190182",
+      "title": "Transforming growth factor-beta receptor, type II",
+      "syndromes": [
+        {"name": "Loeys-Dietz syndrome 2", "mim": "610168"}
+      ],
+      "inheritance": "AD"
+    },
+    "TWIST2": {
+      "mim_number": "607556",
+      "title": "Twist family bHLH transcription factor 2",
+      "syndromes": [
+        {"name": "Focal facial dermal dysplasia 3, Setleis type", "mim": "227260"},
+        {"name": "Ablepharon-macrostomia syndrome", "mim": "200110"},
+        {"name": "Barber-Say syndrome", "mim": "209885"}
+      ],
+      "inheritance": "AD/AR"
+    },
+    "TYR": {
+      "mim_number": "606933",
+      "title": "Tyrosinase",
+      "syndromes": [
+        {"name": "Albinism, oculocutaneous, type IA", "mim": "203100"},
+        {"name": "Albinism, oculocutaneous, type IB", "mim": "606952"}
+      ],
+      "inheritance": "AR"
+    },
+    "TYRP1": {
+      "mim_number": "115501",
+      "title": "Tyrosinase-related protein 1",
+      "syndromes": [
+        {"name": "Albinism, oculocutaneous, type III", "mim": "203290"}
+      ],
+      "inheritance": "AR"
+    },
+    "WNT1": {
+      "mim_number": "164820",
+      "title": "Wingless-type MMTV integration site family, member 1",
+      "syndromes": [
+        {"name": "Osteogenesis imperfecta, type XV", "mim": "615220"}
+      ],
+      "inheritance": "AR"
+    },
+    "WNT3A": {
+      "mim_number": "606359",
+      "title": "Wingless-type MMTV integration site family, member 3A",
+      "syndromes": [],
+      "inheritance": null
+    },
+    "ZEB2": {
+      "mim_number": "605802",
+      "title": "Zinc finger E-box binding homeobox 2",
+      "syndromes": [
+        {"name": "Mowat-Wilson syndrome", "mim": "235730"}
+      ],
+      "inheritance": "AD"
+    }
+  }
+}

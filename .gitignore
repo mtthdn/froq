@@ -1,0 +1,7 @@
+output/
+data/omim/genemap2.txt
+data/hpo/phenotype_to_genes.txt
+data/cache/
+__pycache__/
+*.pyc
+.env

@@ -1,0 +1,11 @@
+{
+  "name": "NIDCR FaceBase Portfolio",
+  "description": "Genes with existing FaceBase experimental datasets",
+  "genes": [
+    "AXIN2", "BMP4", "CTNNB1", "DLX2", "DLX3", "DLX5",
+    "FGF8", "FGFR1", "FGFR2", "HAND2", "IRF6", "MSX1",
+    "RUNX2", "SHH", "SOX2", "SOX9", "TBX1", "TFAP2A",
+    "TFAP2B", "TGFBR2", "TWIST1", "WNT1"
+  ],
+  "source": "FaceBase DERIVA catalog"
+}

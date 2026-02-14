@@ -1,0 +1,245 @@
+{% extends "base.html.j2" %}
+
+{% block title %}froq &mdash; Grant Gap Finder{% endblock %}
+
+{% block head_extra %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="header">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <div>
+      <h1><span>froq</span> Grant Gap Finder</h1>
+      <div class="subtitle">
+        Cross-referencing {{ total }} neural crest genes across {{ source_count }} biomedical databases to surface
+        clinically important but scientifically understudied genes for NIDCR funding decisions.
+      </div>
+    </div>
+    <a href="about.html" class="about-link">About &amp; Methodology</a>
+  </div>
+</div>
+
+<div class="container" id="main" role="main">
+
+  <!-- Three query cards -->
+  <div class="query-grid">
+
+    <!-- Card 1: Funding Gaps -->
+    <div class="query-card">
+      <h3>Where are the funding gaps?</h3>
+      <div class="qc-desc">
+        Genes with OMIM disease association but no FaceBase experimental data.
+        These represent known disease genes lacking craniofacial research coverage.
+      </div>
+      <div class="qc-metric" style="color:var(--red)">{{ critical_count }}</div>
+      <div style="font-size:0.8rem;color:var(--text-sec);margin-bottom:1rem">critical gaps out of {{ total }} genes</div>
+      <div id="gap-list" style="max-height:300px;overflow-y:auto"></div>
+    </div>
+
+    <!-- Card 2: Source Coverage -->
+    <div class="query-card">
+      <h3>How complete is the data?</h3>
+      <div class="qc-desc">
+        Coverage across {{ source_count }} biomedical databases. Gaps in FaceBase
+        and ClinVar represent opportunities for experimental and clinical research.
+      </div>
+      {% for key, label in source_names.items() %}
+      {% set count = source_counts[key] %}
+      {% set pct = (count * 100 // total) if total else 0 %}
+      {% if pct >= 90 %}
+        {% set bar_color = "var(--green)" %}
+      {% elif pct >= 50 %}
+        {% set bar_color = "var(--orange)" %}
+      {% else %}
+        {% set bar_color = "var(--red)" %}
+      {% endif %}
+      {% set url = source_urls.get(key, "#") %}
+      <div class="source-card">
+        <a href="{{ url }}" target="_blank" class="source-name">{{ label }}</a>
+        <div class="source-bar-bg"><div class="source-bar" style="width:{{ pct }}%;background:{{ bar_color }}"></div></div>
+        <div class="source-stat">{{ count }}/{{ total }} ({{ pct }}%)</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Card 3: Understudied genes -->
+    <div class="query-card">
+      <h3>Which genes are understudied?</h3>
+      <div class="qc-desc">
+        Disease genes ranked by craniofacial publication count (ascending).
+        Fewer publications = less research attention relative to clinical importance.
+      </div>
+      <div id="understudied-list" style="max-height:350px;overflow-y:auto"></div>
+    </div>
+
+  </div>
+
+  <!-- Cross-Source Filter -->
+  <div class="filter-section" id="filter-section">
+    <h2>Cross-Source Filter</h2>
+    <div class="filter-desc">Click a source to cycle: <span style="color:var(--text-sec)">any</span> &rarr; <span style="color:var(--green)">required</span> &rarr; <span style="color:var(--red)">excluded</span>. Set numeric ranges. Apply to filter the gene table below.</div>
+    <div class="filter-grid">
+      {% for key, label in source_names.items() %}
+      <button class="filter-toggle" data-filter="{{ filter_keys[key] }}" data-state="any" onclick="cycleFilter(this)" role="switch" aria-checked="false" aria-label="Filter: {{ label }} — any">{{ label }}</button>
+      {% endfor %}
+    </div>
+    <div class="filter-ranges">
+      <div class="filter-range-group">
+        <label>Pubs min</label>
+        <input type="number" id="filter-pub-min" min="0" placeholder="0">
+      </div>
+      <div class="filter-range-group">
+        <label>Pubs max</label>
+        <input type="number" id="filter-pub-max" min="0" placeholder="any">
+      </div>
+      <div class="filter-range-group">
+        <label>Pathogenic min</label>
+        <input type="number" id="filter-path-min" min="0" placeholder="0">
+      </div>
+      <div class="filter-range-group">
+        <label>Pathogenic max</label>
+        <input type="number" id="filter-path-max" min="0" placeholder="any">
+      </div>
+    </div>
+    <div class="filter-actions">
+      <button class="action-btn" onclick="applyFilter()" style="background:var(--accent);color:var(--bg);border-color:var(--accent)">Apply to Table</button>
+      <button class="action-btn" onclick="resetFilter()">Reset</button>
+      <span class="filter-count" id="filter-count"></span>
+    </div>
+  </div>
+
+  <!-- Graph -->
+  <div class="graph-section">
+    <div class="graph-header">
+      <div>
+        <h2>Gene Landscape</h2>
+        <div class="gh-sub">Node size = publication count &middot; Color = developmental role &middot; Pink edges = shared syndrome</div>
+      </div>
+      <div class="graph-controls">
+        <label>Layout:</label>
+        <button class="layout-btn active" onclick="setLayout('cose', this)">Force</button>
+        <button class="layout-btn" onclick="setLayout('circle', this)">Circle</button>
+        <button class="layout-btn" onclick="setLayout('concentric', this)">Concentric</button>
+      </div>
+      <div class="graph-legend">
+        {% for role, info in legend_items %}
+        <span><span class="legend-dot" style="background:{{ info.color }}"></span>{{ info.label }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <div id="cy"></div>
+  </div>
+
+  <!-- Syndrome-Centric View -->
+  <div class="table-section" id="syndrome-section">
+    <div class="table-header">
+      <h2>Syndrome-Centric View</h2>
+      <div class="table-actions">
+        <button class="action-btn" id="syndrome-toggle-btn" onclick="toggleSingleGeneSyndromes()">Show All</button>
+      </div>
+    </div>
+    <div class="syndrome-filter-info" id="syndrome-filter-info"></div>
+    <div class="table-wrap">
+    <table id="syndrome-table">
+      <thead>
+        <tr>
+          <th data-sort-syn="name" data-type="str">Syndrome</th>
+          <th data-sort-syn="gene_count" data-type="num">Genes</th>
+          <th data-sort-syn="fb_pct" data-type="num">FaceBase %</th>
+          <th data-sort-syn="avg_pubs" data-type="num">Avg Pubs</th>
+          <th data-sort-syn="pathogenic" data-type="num">Pathogenic</th>
+        </tr>
+      </thead>
+      <tbody id="syndrome-tbody"></tbody>
+      <tbody id="syndrome-tbody-single" class="collapsible-section"></tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- Portfolio Overlay -->
+  <div class="table-section" id="portfolio-section">
+    <div class="table-header">
+      <h2>Portfolio Overlay</h2>
+    </div>
+    <div style="padding:1.5rem">
+      <div style="font-size:0.8rem;color:var(--text-sec);margin-bottom:0.8rem;line-height:1.4">
+        Paste your funded gene targets to see which critical gaps they cover
+        and which remain unfunded.
+      </div>
+      <textarea id="portfolio-input" class="portfolio-input" placeholder="Paste gene symbols (comma, space, or newline separated)&#10;Example: SOX10, PAX3, TWIST1"></textarea>
+      <button class="action-btn" onclick="analyzePortfolio()" style="margin-top:0.5rem">Analyze Portfolio</button>
+      <div id="portfolio-results"></div>
+    </div>
+  </div>
+
+  <!-- Change History -->
+  <div class="table-section" id="history-section">
+    <div class="table-header">
+      <h2>Change History</h2>
+    </div>
+    <div style="padding:1.5rem" id="history-content"></div>
+  </div>
+
+  <!-- Gene table -->
+  <div class="table-section" id="gene-table-section">
+    <div class="table-header">
+      <h2>Per-Gene Coverage ({{ total }} genes)</h2>
+      <input type="text" id="gene-search" class="gene-search-input" placeholder="Search genes, syndromes, proteins..." autocomplete="off">
+      <div class="table-actions">
+        <button class="action-btn" onclick="showBriefing()">Briefing Summary</button>
+        <button class="action-btn" onclick="downloadCSV()">Download CSV</button>
+      </div>
+    </div>
+    <div class="table-wrap">
+    <table role="grid" aria-label="Gene source coverage">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th role="columnheader" data-sort="symbol" data-type="str">Gene</th>
+          {% for key, label in source_names.items() %}
+          <th data-sort="{{ filter_keys[key] }}" data-type="bool">{{ label }}</th>
+          {% endfor %}
+          <th data-sort="count" data-type="num">Src</th>
+          <th data-sort="pub_total" data-type="num">Pubs</th>
+          <th data-sort="pub_recent" data-type="num">Recent</th>
+          <th data-sort="pathogenic" data-type="num">Pathogenic</th>
+          <th data-sort="syndrome" data-type="str">Key Syndrome</th>
+        </tr>
+      </thead>
+      <tbody id="gene-tbody"></tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    froq &mdash; CUE lattice unification for multi-source biomedical data &middot;
+    <a href="https://github.com/mtthdn/froq">GitHub</a>
+  </div>
+
+</div>
+
+<!-- Detail panel -->
+<div class="detail-panel" id="detail-panel">
+  <button class="detail-close" onclick="closeDetail()" aria-label="Close detail panel">&times;</button>
+  <div id="detail-content"></div>
+</div>
+
+<!-- Edge tooltip -->
+<div class="edge-tooltip" id="edge-tooltip"></div>
+
+<!-- Briefing modal -->
+<div class="modal-overlay" id="briefing-modal">
+  <div class="modal-content">
+    <h3>Briefing Summary</h3>
+    <pre id="briefing-text"></pre>
+    <div class="modal-actions">
+      <button class="action-btn" onclick="copyBriefing()">Copy to Clipboard</button>
+      <button class="action-btn" onclick="closeBriefing()">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+{% include "app.js" %}
+</script>
+{% endblock %}

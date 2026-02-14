@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}froq{% endblock %}</title>
+{% block head_extra %}{% endblock %}
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+{% include "style.css" %}
+{% block extra_style %}{% endblock %}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+{% block body %}{% endblock %}
+</body>
+</html>
