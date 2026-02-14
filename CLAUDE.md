@@ -36,7 +36,7 @@ normalizers/ (API/file inputs) -> model/ (CUE unification) -> generators/ (JSON/
 - `model/proj_anomalies.cue` — Cross-source anomaly detection rules
 - `normalizers/genes.py` — Shared gene list + HGNC ID lookup table
 - `normalizers/utils.py` — Shared HTTP retry/backoff utilities
-- `normalizers/from_*.py` — Per-source normalizers (12 sources)
+- `normalizers/from_*.py` — Per-source normalizers (16 sources)
 - `generators/to_vizdata.py` — VizData JSON for graph explorer
 - `generators/to_site.py` — Static site generator (Jinja2 templates)
 - `generators/to_summary.py` — Human-readable summary

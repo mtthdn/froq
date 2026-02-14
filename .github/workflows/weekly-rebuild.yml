@@ -43,6 +43,13 @@ jobs:
 
       - name: Generate outputs
         run: |
+          mkdir -p output
+          cue export ./model/ -e gap_report > output/gap_report.json
+          cue export ./model/ -e enrichment > output/enrichment.json
+          cue export ./model/ -e gene_sources > output/sources.json
+          cue export ./model/ -e funding_gaps > output/funding_gaps.json
+          cue export ./model/ -e weighted_gaps > output/weighted_gaps.json
+          cue export ./model/ -e anomalies > output/anomalies.json
           python3 generators/to_vizdata.py
           python3 generators/to_site.py
 
@@ -53,10 +60,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet model/ output/; then
+          if git diff --quiet model/ output/ data/; then
             echo "No data changes detected"
           else
-            git add model/ output/
+            git add model/ output/ data/
             git commit -m "chore: weekly data refresh $(date +%Y-%m-%d)"
             git push
           fi
