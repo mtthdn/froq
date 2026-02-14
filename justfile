@@ -157,5 +157,17 @@ anomalies:
 digest:
     python3 generators/to_digest.py
 
+# Bulk pipeline: genome-wide analysis (19K genes, no CUE)
+bulk:
+    python3 normalizers/bulk_downloads.py
+
+# Bulk pipeline: craniofacial-adjacent only (1K+ genes)
+bulk-craniofacial:
+    python3 normalizers/bulk_downloads.py --craniofacial
+
+# Download HGNC complete gene set
+hgnc:
+    python3 normalizers/bulk_hgnc.py --craniofacial
+
 # Generate all outputs
 all: generate vizdata report site
