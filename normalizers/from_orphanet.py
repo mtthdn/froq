@@ -18,7 +18,10 @@ Usage:
 
 import json
 import sys
-import xml.etree.ElementTree as ET
+try:
+    import defusedxml.ElementTree as ET
+except ImportError:
+    import xml.etree.ElementTree as ET
 from pathlib import Path
 
 # Resolve paths relative to repo root (parent of normalizers/)

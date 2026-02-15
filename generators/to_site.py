@@ -22,7 +22,7 @@ from datetime import date
 from glob import glob
 from pathlib import Path
 
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 GENERATOR_DIR = Path(__file__).resolve().parent
 TEMPLATE_DIR = GENERATOR_DIR / "templates"
@@ -362,7 +362,11 @@ def main():
     critical_count = funding_summary.get("critical_count", 0)
 
     # Set up Jinja2 environment
-    env = Environment(loader=FileSystemLoader([str(TEMPLATE_DIR), str(STATIC_DIR)]))
+    env = Environment(
+        loader=FileSystemLoader([str(TEMPLATE_DIR), str(STATIC_DIR)]),
+        autoescape=select_autoescape(default_for_string=False, default=False,
+                                      enabled_extensions=("html", "html.j2")),
+    )
 
     # Render index page
     index_template = env.get_template("index.html.j2")

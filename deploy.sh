@@ -3,7 +3,7 @@
 set -euo pipefail
 
 SITE_DIR="$(cd "$(dirname "$0")" && pwd)/output/site"
-TULIP="root@172.20.1.10"
+TULIP="${DEPLOY_HOST:-root@tulip}"
 
 # Verify site files exist
 if [[ ! -f "$SITE_DIR/index.html" ]]; then
