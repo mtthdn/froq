@@ -293,21 +293,25 @@ li { margin-bottom: 0.3rem; }
 
 <h2 style="font-size:1rem;border:none;margin-top:0.5rem">Gene Selection</h2>
 <p>
-  The 95 genes span the neural crest gene regulatory network as described in the
+  The {{ total }} genes span the neural crest gene regulatory network as described in the
   literature, organized into 8 developmental categories: border specification,
   neural crest specifiers, EMT/migration, signaling pathways, craniofacial patterning,
   melanocyte/pigmentation, enteric nervous system, and cardiac neural crest.
-  <em>Simoes-Costa &amp; Bronner (2015) Development 142:242&ndash;257</em> and
-  <em>Martik &amp; Bronner (2017) Developmental Biology 429:293&ndash;302.</em>
+  <em>Simoes-Costa &amp; Bronner (2015) Development 142:242&ndash;257;</em>
+  <em>Martik &amp; Bronner (2017) Nature Reviews Molecular Cell Biology 18:453&ndash;464;</em>
+  <em>Sauka-Spengler &amp; Bronner-Fraser (2008) Nature Reviews Molecular Cell Biology 9:557&ndash;568.</em>
 </p>
 
 <h2 style="font-size:1rem;border:none;margin-top:0.5rem">Data Pipeline</h2>
 <p>
-  Each source is fetched by a Python normalizer script that queries the source API,
+  Each source is fetched by a dedicated Python normalizer that queries the source API,
   caches raw results locally, and emits a <a href="https://cuelang.org/">CUE</a> data
-  file. CUE&rsquo;s lattice-based unification merges all {{ source_count }} sources into a single typed
-  model per gene &mdash; each source owns its fields, and CUE guarantees structural
-  consistency across the full dataset without imperative merge logic.
+  file. Sources <em>observe</em> (each normalizer writes only to its own namespaced fields);
+  projections <em>decide</em> (gap reports, anomaly detection, and enrichment rankings
+  are computed from the unified model). CUE&rsquo;s lattice-based unification merges all
+  {{ source_count }} sources into a single typed model per gene &mdash; if two sources provide
+  conflicting data for the same field, CUE catches the inconsistency as a type error rather
+  than silently picking one value.
 </p>
 
 <h2 style="font-size:1rem;border:none;margin-top:0.5rem">Gap Detection</h2>
@@ -339,12 +343,63 @@ li { margin-bottom: 0.3rem; }
   propagation identifies clusters of functionally related genes.
 </p>
 
+<h2>Expanded Pipeline</h2>
+<p>
+  Beyond the {{ total }} curated genes, lacuene operates an <strong>expanded pipeline</strong>
+  that identifies additional craniofacial-adjacent genes as candidates for future curation.
+  Using HGNC gene group membership and name-term matching, the expanded set covers ~494 genes
+  from families such as BMP, FGF, SOX, PAX, WNT, cadherins, and collagens (excluding the
+  Zinc finger C2H2 family, which at 760 members is too broad to be informative).
+</p>
+<p>
+  The expanded pipeline identifies <strong>gap candidates</strong>: genes with disease signal
+  (HPO phenotypes, Orphanet rare disease associations, OMIM entries) that are <em>not</em>
+  in the curated {{ total }}-gene set. Each candidate receives a confidence score based on
+  log-scaled evidence density across three sources:
+</p>
+<ul>
+  <li><strong>HPO phenotypes</strong> &mdash; log<sub>2</sub>(count + 1), weighting genes with
+    broad phenotypic associations higher</li>
+  <li><strong>Orphanet rare diseases</strong> &mdash; log<sub>2</sub>(count + 1) &times; 3,
+    giving a premium to rare disease signal from the full Orphadata product6 dataset (4,500+ genes)</li>
+  <li><strong>OMIM</strong> &mdash; base score plus log-scaled syndrome count</li>
+</ul>
+<p>
+  Top candidates are further enriched with NCBI Gene summaries, PubMed craniofacial
+  publication counts, and UniProt function annotations. This enrichment surfaces which
+  candidates are already actively studied in the craniofacial field &mdash; and which
+  represent genuinely unexplored territory.
+</p>
+<p>
+  The expanded pipeline runs as an overnight worker, updating weekly. Its results are
+  available via the <a href="https://lacuene-api.apercue.ca/api/status">lacuene API</a>
+  and in the weekly digest.
+</p>
+
+<h2>Architecture</h2>
+<p>
+  lacuene follows a <strong>curated core / derived periphery</strong> architecture. The curated
+  pipeline (this dashboard) contains {{ total }} hand-verified genes reconciled across
+  {{ source_count }} sources using CUE lattice unification. Every data point traces to a
+  canonical public database; no algorithmic opinions are mixed into the curated output.
+</p>
+<p>
+  The derived layer (lacuene-exp) builds on top of the curated data, adding gap candidate
+  identification, confidence scoring, and enrichment. Each derived output carries a
+  <strong>provenance</strong> block that declares its canon purity &mdash; which parts come
+  from authoritative sources and which reflect our analytical choices. This separation
+  means the curated data remains defensible for grant applications while the derived layer
+  enables exploratory analysis.
+</p>
+
 <h2>Technology</h2>
 <p>
   lacuene is built with <a href="https://cuelang.org/">CUE</a> for data unification,
-  Python for normalization and generation, and <a href="https://js.cytoscape.org/">Cytoscape.js</a>
-  for graph visualization. The pipeline is fully reproducible from cached source data.
-  Source code is available on <a href="https://github.com/mtthdn/lacuene">GitHub</a>.
+  Python for normalization and generation, <a href="https://js.cytoscape.org/">Cytoscape.js</a>
+  for graph visualization, and <a href="https://flask.palletsprojects.com/">Flask</a> for the
+  REST API. The curated pipeline rebuilds from cached source data in under 10 seconds.
+  Source code: <a href="https://github.com/mtthdn/lacuene">lacuene</a> (curated pipeline)
+  and <a href="https://github.com/mtthdn/lacuene-exp">lacuene-exp</a> (expanded pipeline and API).
 </p>
 
 <h2>References</h2>
@@ -378,29 +433,33 @@ li { margin-bottom: 0.3rem; }
     <a href="https://doi.org/10.1242/dev.105445">doi:10.1242/dev.105445</a></li>
 
   <li><span class="ref-num">[8]</span> Martik ML, Bronner ME. &ldquo;Regulatory logic underlying diversification of the neural crest.&rdquo;
-    <em>Developmental Biology</em> 429:293&ndash;302 (2017).
-    <a href="https://doi.org/10.1016/j.ydbio.2017.05.028">doi:10.1016/j.ydbio.2017.05.028</a></li>
+    <em>Nature Reviews Molecular Cell Biology</em> 18:453&ndash;464 (2017).
+    <a href="https://doi.org/10.1038/nrm.2017.36">doi:10.1038/nrm.2017.36</a></li>
 
-  <li><span class="ref-num">[9]</span> Szklarczyk D et al. &ldquo;The STRING database in 2023: protein&ndash;protein association networks
+  <li><span class="ref-num">[9]</span> Sauka-Spengler T, Bronner-Fraser M. &ldquo;A gene regulatory network orchestrates neural crest formation.&rdquo;
+    <em>Nature Reviews Molecular Cell Biology</em> 9:557&ndash;568 (2008).
+    <a href="https://doi.org/10.1038/nrm2428">doi:10.1038/nrm2428</a></li>
+
+  <li><span class="ref-num">[10]</span> Szklarczyk D et al. &ldquo;The STRING database in 2023: protein&ndash;protein association networks
     and functional enrichment analyses for any sequenced genome of interest.&rdquo;
     <em>Nucleic Acids Research</em> 51:D483&ndash;D489 (2023).
     <a href="https://doi.org/10.1093/nar/gkac1000">doi:10.1093/nar/gkac1000</a></li>
 
-  <li><span class="ref-num">[10]</span> Rath A et al. &ldquo;Representation of rare diseases in health information systems:
+  <li><span class="ref-num">[11]</span> Rath A et al. &ldquo;Representation of rare diseases in health information systems:
     the Orphanet approach to serve a wide range of end users.&rdquo;
     <em>Human Mutation</em> 33:803&ndash;808 (2012).
     <a href="https://doi.org/10.1002/humu.22078">doi:10.1002/humu.22078</a></li>
 
-  <li><span class="ref-num">[11]</span> Ochoa D et al. &ldquo;The next-generation Open Targets Platform: reimagined, redesigned, rebuilt.&rdquo;
+  <li><span class="ref-num">[12]</span> Ochoa D et al. &ldquo;The next-generation Open Targets Platform: reimagined, redesigned, rebuilt.&rdquo;
     <em>Nucleic Acids Research</em> 51:D1302&ndash;D1310 (2023).
     <a href="https://doi.org/10.1093/nar/gkac1046">doi:10.1093/nar/gkac1046</a></li>
 
-  <li><span class="ref-num">[12]</span> Alliance of Genome Resources Consortium. &ldquo;The Alliance of Genome Resources: building a
+  <li><span class="ref-num">[13]</span> Alliance of Genome Resources Consortium. &ldquo;The Alliance of Genome Resources: building a
     modern data ecosystem for model organism databases.&rdquo;
     <em>Genetics</em> 227:iyae149 (2024).
     <a href="https://doi.org/10.1093/genetics/iyae149">doi:10.1093/genetics/iyae149</a></li>
 
-  <li><span class="ref-num">[13]</span> Jumper J et al. &ldquo;Highly accurate protein structure prediction with AlphaFold.&rdquo;
+  <li><span class="ref-num">[14]</span> Jumper J et al. &ldquo;Highly accurate protein structure prediction with AlphaFold.&rdquo;
     <em>Nature</em> 596:583&ndash;589 (2021).
     <a href="https://doi.org/10.1038/s41586-021-03819-2">doi:10.1038/s41586-021-03819-2</a></li>
 </ul>
