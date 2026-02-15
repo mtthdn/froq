@@ -125,6 +125,10 @@
           <button class="layout-btn" onclick="setClusterLayout(this)" title="Community detection — groups genes by shared connections">Cluster</button>
         </div>
         <div class="control-group">
+          <label>Nodes:</label>
+          <button class="layout-btn" onclick="toggleExpandedNodes(this)" title="Toggle 663 expanded-tier genes (no edges, shown as gray dots)">Show Expanded</button>
+        </div>
+        <div class="control-group">
           <label>Edges:</label>
           <button class="layout-btn edge-filter" data-edge="all" onclick="filterEdges('all', this)" title="Show all edge types (may be visually dense)">All</button>
           <button class="layout-btn edge-filter active" data-edge="key" onclick="filterEdges('key', this)" title="Syndrome + PPI edges only (recommended)">Key</button>

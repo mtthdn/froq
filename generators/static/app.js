@@ -232,25 +232,7 @@ const cy = cytoscape({
       }
     },
   ],
-  layout: {
-    name: 'cose',
-    idealEdgeLength: 250,
-    nodeOverlap: 80,
-    refresh: 20,
-    fit: true,
-    padding: 50,
-    randomize: false,
-    componentSpacing: 200,
-    nodeRepulsion: 200000,
-    edgeElasticity: 300,
-    nestingFactor: 5,
-    gravity: 8,
-    numIter: 2500,
-    initialTemp: 400,
-    coolingFactor: 0.95,
-    minTemp: 1.0,
-    animate: false,
-  },
+  layout: { name: 'preset' },  // No initial layout — we run CoSE after hiding expanded nodes
   wheelSensitivity: 0.3,
   maxZoom: 6,
   minZoom: 0.1,
@@ -277,6 +259,9 @@ function setLayout(name, btn) {
       levelWidth: () => 2,
     });
   }
+  // Run layout only on visible nodes to avoid computing positions for hidden expanded-tier nodes
+  const visible = cy.nodes(':visible').union(cy.edges(':visible'));
+  opts.eles = visible;
   cy.layout(opts).run();
 }
 
@@ -297,6 +282,7 @@ function filterEdges(type, btn) {
 }
 
 // Default to showing key edges only (syndrome + PPI) to avoid visual overload
+// Hide expanded-tier nodes by default (663 disconnected nodes overwhelm layout)
 (function() {
   cy.edges().style('display', 'none');
   cy.edges('[type="shared_syndrome"]').style('display', 'element');
@@ -304,7 +290,29 @@ function filterEdges(type, btn) {
   document.querySelectorAll('.edge-filter').forEach(b => b.classList.remove('active'));
   const keyBtn = document.querySelector('.edge-filter[data-edge="key"]');
   if (keyBtn) keyBtn.classList.add('active');
+  cy.nodes('[type="expanded"]').style('display', 'none');
+  // Now run initial CoSE layout on curated nodes only (95 nodes, fast)
+  const curated = cy.nodes(':visible').union(cy.edges(':visible'));
+  curated.layout({
+    name: 'cose',
+    idealEdgeLength: 250, nodeOverlap: 80, refresh: 20,
+    fit: true, padding: 50, randomize: true,
+    componentSpacing: 200, nodeRepulsion: 200000,
+    edgeElasticity: 300, nestingFactor: 5,
+    gravity: 8, numIter: 2500, initialTemp: 400,
+    coolingFactor: 0.95, minTemp: 1.0, animate: false,
+  }).run();
 })();
+
+let expandedVisible = false;
+function toggleExpandedNodes(btn) {
+  expandedVisible = !expandedVisible;
+  cy.nodes('[type="expanded"]').style('display', expandedVisible ? 'element' : 'none');
+  if (btn) {
+    btn.classList.toggle('active', expandedVisible);
+    btn.textContent = expandedVisible ? 'Hide Expanded' : 'Show Expanded';
+  }
+}
 
 cy.on('tap', 'node', function(evt) {
   const node = evt.target;

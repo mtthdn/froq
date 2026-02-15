@@ -386,7 +386,7 @@ body { font-family: 'Atkinson Hyperlegible Next', system-ui, sans-serif; backgro
 .gene-search-input:focus { outline: none; border-color: var(--accent); }
 .gene-search-input::placeholder { color: #484f58; }
 .table-actions { display: flex; gap: 0.5rem; }
-.table-wrap { overflow-x: auto; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table {
   width: 100%;
   border-collapse: collapse;
@@ -1081,25 +1081,34 @@ tr:hover td { background: var(--elevated); }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .container { padding: 1rem; }
+  .header { padding: 1.2rem 1rem 1rem; }
+  .header h1 { font-size: 1.2rem; }
+  .header .subtitle { font-size: 0.8rem; }
+  .about-link { padding: 4px 10px; font-size: 0.75rem; }
+  .container { padding: 0.8rem; }
   .query-grid { grid-template-columns: 1fr; }
-  #cy { height: 300px; }
+  #cy { height: 50vh; min-height: 250px; }
   .detail-panel { width: 100%; right: -100%; }
-  .filter-section { padding: 1rem; }
-  .filter-grid { gap: 0.4rem; }
-  .filter-toggle { padding: 5px 10px; font-size: 0.72rem; }
-  .filter-ranges { flex-direction: column; gap: 0.6rem; }
+  .detail-panel.open { right: 0; }
+  .filter-section { padding: 0.8rem; }
+  .filter-grid { gap: 0.3rem; }
+  .filter-toggle { padding: 4px 8px; font-size: 0.68rem; }
+  .filter-ranges { flex-direction: column; gap: 0.5rem; }
   .filter-range-group { flex-direction: row; align-items: center; gap: 0.5rem; }
-  .filter-range-group label { min-width: 90px; }
+  .filter-range-group label { min-width: 80px; font-size: 0.7rem; }
   .filter-range-group input { flex: 1; }
   .filter-actions { flex-wrap: wrap; }
   .table-header { flex-direction: column; align-items: stretch; }
   .gene-search-input { max-width: 100%; }
   .portfolio-columns { grid-template-columns: 1fr; }
-  .graph-controls { gap: 0.4rem; }
-  .graph-controls .control-group { gap: 0.3rem; }
-  .layout-btn { padding: 5px 10px; font-size: 0.7rem; }
-  .graph-header { flex-direction: column; align-items: flex-start; }
+  .graph-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 0.8rem; }
+  .graph-controls { gap: 0.3rem; }
+  .graph-controls .control-group { gap: 0.2rem; flex-wrap: wrap; }
+  .graph-controls label { font-size: 0.65rem; min-width: 40px; }
+  .layout-btn { padding: 4px 8px; font-size: 0.65rem; }
   .funding-intel-grid { grid-template-columns: 1fr; }
   .translational-components { display: none; }
+  .section-title { font-size: 0.95rem; }
+  .modal-content { padding: 1rem; width: 95%; }
+  .compare-content { padding: 1rem; }
 }
